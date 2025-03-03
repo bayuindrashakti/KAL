@@ -11,54 +11,41 @@ Solusi dari sistem persamaan linier adalah nilai-nilai variabel yang memenuhi se
 ### 1. Satu Solusi
 #### Contoh Sistem Persamaan
 
-\begin{align*}
-x + 2y + 3z &= 9 \quad (1) \\
-2x + 3y + z &= 8 \quad (2) \\
-3x + y + 2z &= 7 \quad (3)
-\end{align*}
+x + 2y + 3z = 9
+2x + 3y + z = 8
+3x + y + 2z = 7
 
 <iframe src="https://www.geogebra.org/3d/nm5kbzvu?embed" width="800" height="600" allowfullscreen style="border: 1px solid #e4e4e4;border-radius: 4px;" frameborder="0"></iframe>
 
 #### Langkah Penyelesaian:
 1. **Matriks Augmented**: 
    
-   \begin{bmatrix}
-   1 & 2 & 3 & | & 9 \\
-   2 & 3 & 1 & | & 8 \\
-   3 & 1 & 2 & | & 7
-   \end{bmatrix}
+[1 2 3 | 9]
+[2 3 1 | 8]
+[3 1 2 | 7]
    
 
 2. **Eliminasi**:
-   - Ubah baris 2 dan 3:
-  
-   R_2 <- R_2 - 2R_1 ... R_3 <- R_3 - 3R_1
-   
-   Hasil menjadi:
-   
-   \begin{bmatrix}
-   1 & 2 & 3 & | & 9 \\
-   0 & -1 & -5 & | & -10 \\
-   0 & -5 & -7 & | & -20
-   \end{bmatrix}
+- Ubah baris 2 dan 3:
+R2 = R2 - 2R1
+R3 = R3 - 3R1
+Hasil menjadi:
+[1 2 3 | 9]
+[0 -1 -5 | -10]
+[0 -5 -7 | -20]
    
 
-   - Ubah baris 3:
-   
-   R_3 <- R_3 - 5R_2
-  
-   Hasil menjadi:
-   
-   \begin{bmatrix}
-   1 & 2 & 3 & | & 9 \\
-   0 & -1 & -5 & | & -10 \\
-   0 & 0 & 0 & | & 0
-   \end{bmatrix}
+- Ubah baris 3:
+R3 = R3 - 5R2
+Hasil menjadi:
+[1 2 3 | 9]
+[0 -1 -5 | -10]
+[0 0 0 | 0]
    
 
 3. **Back Substitution**:
-   - Dari baris 2: \(y + 5z = 10 -> y = 10 - 5z\)
-   - Dari baris 1: \(x + 2(10 - 5z) + 3z = 9\)
+- Dari baris 2: y + 5z = 10 → y = 10 - 5z
+-Dari baris 1: x + 2(10 - 5z) + 3z = 9
 
    Solusi unik diperoleh dengan nilai tertentu.
 
@@ -66,68 +53,50 @@ x + 2y + 3z &= 9 \quad (1) \\
 
 #### Contoh Sistem Persamaan
 
-\begin{align*}
-x + 2y + z &= 5 \quad (1) \\
-2x + 4y + 2z &= 10 \quad (2) \\
-3x + 6y + 3z &= 15 \quad (3)
-\end{align*}
+x + 2y + z = 5
+2x + 4y + 2z = 10
+3x + 6y + 3z = 15
 
 <iframe src="https://www.geogebra.org/3d/kqxxdwne?embed" width="800" height="600" allowfullscreen style="border: 1px solid #e4e4e4;border-radius: 4px;" frameborder="0"></iframe>
 
 #### Langkah Penyelesaian:
 1. **Matriks Augmented**:
    
-   \begin{bmatrix}
-   1 & 2 & 1 & | & 5 \\
-   2 & 4 & 2 & | & 10 \\
-   3 & 6 & 3 & | & 15
-   \end{bmatrix}
+[1 2 1 | 5]
+[2 4 2 | 10]
+[3 6 3 | 15]
    
-
 2. **Eliminasi**:
-   - Ubah baris 2 dan 3:
-   
-   R_2 <- R_2 - 2R_1 ... R_3 <- R_3 - 3R_1
-   
-   Hasil menjadi:
-   
-   \begin{bmatrix}
-   1 & 2 & 1 & | & 5 \\
-   0 & 0 & 0 & | & 0 \\
-   0 & 0 & 0 & | & 0
-   \end{bmatrix}
+- Ubah baris 2 dan 3:
+R2 = R2 - 2R1
+R3 = R3 - 3R1
+Hasil menjadi:
+[1 2 1 | 5]
+[0 0 0 | 0]
+[0 0 0 | 0]
 
 ### 3. Tanpa Solusi
 
 #### Contoh Sistem Persamaan
 
-\begin{align*}
-x + y + z &= 2 \quad (1) \\
-2x + 2y + 2z &= 3 \quad (2) \\
-3x + 3y + 3z &= 5 \quad (3)
-\end{align*}
+x + y + z = 2
+2x + 2y + 2z = 3
+3x + 3y + 3z = 5
 
 <iframe src="https://www.geogebra.org/3d/n6x44qtc?embed" width="800" height="600" allowfullscreen style="border: 1px solid #e4e4e4;border-radius: 4px;" frameborder="0"></iframe>
 
 #### Langkah Penyelesaian:
 1. **Matriks Augmented**:
    
-   \begin{bmatrix}
-   1 & 1 & 1 & | & 2 \\
-   2 & 2 & 2 & | & 3 \\
-   3 & 3 & 3 & | & 5
-   \end{bmatrix}
+[1 1 1 | 2]
+[2 2 2 | 3]
+[3 3 3 | 5]
    
-
 2. **Eliminasi**:
-   - Ubah baris 2 dan 3:
-   
-   R_2 <- R_2 - 2R_1 ... R_3 <- R_3 - 3R_1
-   
-   Hasil menjadi:
-   
-   \begin{bmatrix}
-   1 & 1 & 1 & | & 2 \\
-   0 & 0 & 0 & | & -1 \\
-   0 & 0 & 0 & | & -1
-   \end{bmatrix}
+- Ubah baris 2 dan 3:
+R2 = R2 - 2R1
+R3 = R3 - 3R1
+Hasil menjadi:
+[1 1 1 | 2]
+[0 0 0 | -1]
+[0 0 0 | -1]
