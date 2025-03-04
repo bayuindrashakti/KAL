@@ -6,8 +6,9 @@
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Index &#8212; My sample book</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Sistem Persamaan Linier &#8212; My sample book</title>
   
   
   
@@ -56,8 +57,8 @@
     <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'genindex';</script>
-    <link rel="index" title="Index" href="#" />
+    <script>DOCUMENTATION_OPTIONS.pagename = 'Sistem Persamaan Linier';</script>
+    <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -252,7 +253,7 @@
       
       
       
-      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fgenindex.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2FSistem Persamaan Linier.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -264,6 +265,54 @@
   </span>
 <span class="btn__text-container">Open issue</span>
 </a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/Sistem Persamaan Linier.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
 </li>
       
   </ul>
@@ -305,7 +354,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
 </div></div>
       
     </div>
@@ -316,11 +367,36 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1></h1>
+    <h1>Sistem Persamaan Linier</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#solusi-sistem-persamaan-linier">Solusi Sistem Persamaan Linier</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#satu-solusi">1. Satu Solusi</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-sistem-persamaan">Contoh Sistem Persamaan</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-penyelesaian">Langkah Penyelesaian:</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#solusi-tak-hingga">2. Solusi Tak Hingga</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Contoh Sistem Persamaan</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Langkah Penyelesaian:</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tanpa-solusi">3. Tanpa Solusi</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Contoh Sistem Persamaan</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Langkah Penyelesaian:</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -330,13 +406,142 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
+  <section class="tex2jax_ignore mathjax_ignore" id="sistem-persamaan-linier">
+<h1>Sistem Persamaan Linier<a class="headerlink" href="#sistem-persamaan-linier" title="Link to this heading">#</a></h1>
+<p>Sistem persamaan linier adalah sekumpulan dua atau lebih persamaan linier yang memiliki dua atau lebih variabel. Tujuan dari sistem ini adalah untuk menemukan nilai variabel-variabel tersebut yang memenuhi semua persamaan dalam sistem.</p>
+<section id="solusi-sistem-persamaan-linier">
+<h2>Solusi Sistem Persamaan Linier<a class="headerlink" href="#solusi-sistem-persamaan-linier" title="Link to this heading">#</a></h2>
+<p>Solusi dari sistem persamaan linier adalah nilai-nilai variabel yang memenuhi semua persamaan dalam sistem tersebut. Tergantung pada sifat sistem, solusi bisa berupa satu solusi unik, di mana terdapat satu set nilai yang memenuhi semua persamaan. Ini terjadi ketika garis-garis yang merepresentasikan persamaan berpotongan di satu titik. Namun, sistem juga bisa tidak memiliki solusi sama sekali, yaitu ketika persamaan yang ada saling bertentangan dan garis-garis tersebut sejajar. Selain itu, ada pula kemungkinan bahwa sistem memiliki solusi tak terhingga, yang terjadi ketika semua persamaan dalam sistem adalah kelipatan satu sama lain. Untuk menemukan solusi, berbagai metode dapat digunakan, seperti substitusi, eliminasi, metode matriks, atau grafik, yang semuanya akan memberikan hasil yang sama, yaitu nilai-nilai variabel yang merupakan solusi dari sistem tersebut.</p>
+<section id="satu-solusi">
+<h3>1. Satu Solusi<a class="headerlink" href="#satu-solusi" title="Link to this heading">#</a></h3>
+<section id="contoh-sistem-persamaan">
+<h4>Contoh Sistem Persamaan<a class="headerlink" href="#contoh-sistem-persamaan" title="Link to this heading">#</a></h4>
+<p>x + 2y + 3z = 9
+2x + 3y + z = 8
+3x + y + 2z = 7</p>
+<iframe src="https://www.geogebra.org/3d/nm5kbzvu?embed" width="800" height="600" allowfullscreen style="border: 1px solid #e4e4e4;border-radius: 4px;" frameborder="0"></iframe>
+</section>
+<section id="langkah-penyelesaian">
+<h4>Langkah Penyelesaian:<a class="headerlink" href="#langkah-penyelesaian" title="Link to this heading">#</a></h4>
+<ol class="arabic simple">
+<li><p><strong>Matriks Augmented</strong>:</p></li>
+</ol>
+<p>[1 2 3 | 9]
+[2 3 1 | 8]
+[3 1 2 | 7]</p>
+<ol class="arabic simple" start="2">
+<li><p><strong>Eliminasi</strong>:</p></li>
+</ol>
+<ul class="simple">
+<li><p>Ubah baris 2 dan 3:
+R2 = R2 - 2R1
+R3 = R3 - 3R1
+Hasil menjadi:
+[1 2 3 | 9]
+[0 -1 -5 | -10]
+[0 -5 -7 | -20]</p></li>
+<li><p>Ubah baris 3:
+R3 = R3 - 5R2
+Hasil menjadi:
+[1 2 3 | 9]
+[0 -1 -5 | -10]
+[0 0 0 | 0]</p></li>
+</ul>
+<ol class="arabic simple" start="3">
+<li><p><strong>Back Substitution</strong>:</p></li>
+</ol>
+<ul>
+<li><p>Dari baris 2: y + 5z = 10 → y = 10 - 5z
+-Dari baris 1: x + 2(10 - 5z) + 3z = 9</p>
+<p>Solusi unik diperoleh dengan nilai tertentu.</p>
+</li>
+</ul>
+</section>
+</section>
+<section id="solusi-tak-hingga">
+<h3>2. Solusi Tak Hingga<a class="headerlink" href="#solusi-tak-hingga" title="Link to this heading">#</a></h3>
+<section id="id1">
+<h4>Contoh Sistem Persamaan<a class="headerlink" href="#id1" title="Link to this heading">#</a></h4>
+<p>x + 2y + z = 5
+2x + 4y + 2z = 10
+3x + 6y + 3z = 15</p>
+<iframe src="https://www.geogebra.org/3d/kqxxdwne?embed" width="800" height="600" allowfullscreen style="border: 1px solid #e4e4e4;border-radius: 4px;" frameborder="0"></iframe>
+</section>
+<section id="id2">
+<h4>Langkah Penyelesaian:<a class="headerlink" href="#id2" title="Link to this heading">#</a></h4>
+<ol class="arabic simple">
+<li><p><strong>Matriks Augmented</strong>:</p></li>
+</ol>
+<p>[1 2 1 | 5]
+[2 4 2 | 10]
+[3 6 3 | 15]</p>
+<ol class="arabic simple" start="2">
+<li><p><strong>Eliminasi</strong>:</p></li>
+</ol>
+<ul class="simple">
+<li><p>Ubah baris 2 dan 3:
+R2 = R2 - 2R1
+R3 = R3 - 3R1
+Hasil menjadi:
+[1 2 1 | 5]
+[0 0 0 | 0]
+[0 0 0 | 0]</p></li>
+</ul>
+</section>
+</section>
+<section id="tanpa-solusi">
+<h3>3. Tanpa Solusi<a class="headerlink" href="#tanpa-solusi" title="Link to this heading">#</a></h3>
+<section id="id3">
+<h4>Contoh Sistem Persamaan<a class="headerlink" href="#id3" title="Link to this heading">#</a></h4>
+<p>x + y + z = 2
+2x + 2y + 2z = 3
+3x + 3y + 3z = 5</p>
+<iframe src="https://www.geogebra.org/3d/n6x44qtc?embed" width="800" height="600" allowfullscreen style="border: 1px solid #e4e4e4;border-radius: 4px;" frameborder="0"></iframe>
+</section>
+<section id="id4">
+<h4>Langkah Penyelesaian:<a class="headerlink" href="#id4" title="Link to this heading">#</a></h4>
+<ol class="arabic simple">
+<li><p><strong>Matriks Augmented</strong>:</p></li>
+</ol>
+<p>[1 1 1 | 2]
+[2 2 2 | 3]
+[3 3 3 | 5]</p>
+<ol class="arabic simple" start="2">
+<li><p><strong>Eliminasi</strong>:</p></li>
+</ol>
+<ul class="simple">
+<li><p>Ubah baris 2 dan 3:
+R2 = R2 - 2R1
+R3 = R3 - 3R1
+Hasil menjadi:
+[1 1 1 | 2]
+[0 0 0 | -1]
+[0 0 0 | -1]</p></li>
+</ul>
+</section>
+</section>
+</section>
+</section>
 
-<h1 id="index">Index</h1>
-
-<div class="genindex-jumpbox">
- 
-</div>
-
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
 
                 </article>
               
@@ -354,6 +559,38 @@ document.write(`
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#solusi-sistem-persamaan-linier">Solusi Sistem Persamaan Linier</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#satu-solusi">1. Satu Solusi</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-sistem-persamaan">Contoh Sistem Persamaan</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-penyelesaian">Langkah Penyelesaian:</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#solusi-tak-hingga">2. Solusi Tak Hingga</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Contoh Sistem Persamaan</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Langkah Penyelesaian:</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tanpa-solusi">3. Tanpa Solusi</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Contoh Sistem Persamaan</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Langkah Penyelesaian:</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>
