@@ -32,15 +32,15 @@ $$\begin{align*}
 - Ubah baris 2 dan 3:
 
 $$\begin{align*}
-R2 = R2 - 2R1
+R2 = R2 - 2R1 <br>
 R3 = R3 - 3R1
 Hasil menjadi:
 
 $$\begin{align*}
 [1  2  3 | 9] \\
 [0 -1 -5 | -10] \\
-[0 -5 -7 | -20] \\
-\end{align*}$$ 
+[0 -5 -7 | -20]
+\end{align*}$$
 
 - Ubah baris 3:
 R3 = R3 - 5R2
@@ -53,7 +53,7 @@ $$\begin{align*}
 \end{align*}$$
 
 3. **Back Substitution**:
-- Dari baris 2: y + 5z = 10 → y = 10 - 5z
+- Dari baris 2: y + 5z = 10 → y = 10 - 5z <br>
 -Dari baris 1: x + 2(10 - 5z) + 3z = 9
 
    Solusi unik diperoleh dengan nilai tertentu.
