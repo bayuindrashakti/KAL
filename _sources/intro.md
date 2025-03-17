@@ -11,13 +11,13 @@ Solusi dari sistem persamaan linier adalah nilai-nilai variabel yang memenuhi se
 ### 1. Satu Solusi
 #### Contoh Sistem Persamaan
 
-\[
+$$
 \begin{align*}
 x + 2y + 3z &= 9 \\
 2x + 3y + z &= 8 \\
 3x + y + 2z &= 7
 \end{align*}
-\]
+$$
 
 <iframe src="https://www.geogebra.org/3d/nm5kbzvu?embed" width="800" height="600" allowfullscreen style="border: 1px solid #e4e4e4;border-radius: 4px;" frameborder="0"></iframe>
 
