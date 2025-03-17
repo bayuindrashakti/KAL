@@ -1,4 +1,4 @@
-# Contoh Persamaan Linier
+# Persamaan Linier
 
 ### 1. Satu Solusi
 #### Contoh Sistem Persamaan
