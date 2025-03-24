@@ -215,7 +215,7 @@ $$
 A^{-1} = \frac{1}{\text{det}(A)} \cdot \text{adj}(A)
 $$
 
-Dengan substitusi $$\( \text{det}(A) = 74 \)$$:
+Dengan substitusi $( \text{det}(A) = 74 )$:
 
 $$
 A^{-1} = \frac{1}{74} \cdot 
@@ -238,7 +238,7 @@ A^{-1} =
 $$
 
 ### Langkah 6: Menghitung Vektor 
-$$\(X\)$$
+$(X)$
 
 Untuk menemukan vektor $(X)$, kita substitusikan $(A^{-1})$$ dan $(B)$:
 
@@ -265,7 +265,7 @@ $$
 ### Menghitung Vektor 
 $(X)$
 
-1. **Untuk $$\(x\)$$**:
+1. **Untuk $(x)$**:
    $$
    x = -\frac{2}{74} \cdot 1 + \frac{7}{74} \cdot 3 + \frac{11}{74} \cdot 5
    $$
@@ -276,7 +276,7 @@ $(X)$
    x = \frac{-2 + 21 + 55}{74} = \frac{74}{74} = 1
    $$
 
-2. **Untuk $$\(y\)**:
+2. **Untuk $(y)$**:
    $$
    y = \frac{26}{74} \cdot 1 + \frac{-17}{74} \cdot 3 + \frac{5}{74} \cdot 5
    $$
@@ -287,7 +287,7 @@ $(X)$
    y = \frac{26 - 51 + 25}{74} = \frac{0}{74} = 0
    $$
 
-3. **Untuk $$\(z\)**:
+3. **Untuk $(z)$**:
    $$
    z = \frac{8}{74} \cdot 1 + \frac{9}{74} \cdot 3 + \frac{-7}{74} \cdot 5
    $$
