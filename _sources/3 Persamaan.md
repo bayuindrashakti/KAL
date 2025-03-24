@@ -110,7 +110,7 @@ Untuk menghitung invers dari (A), kita perlu menghitung adjoin (A).
 
 Kita perlu menghitung kofaktor untuk setiap elemen dari matriks (A).
 
-1. **Untuk $\(a_{11} = 1\)$**:
+1. **Untuk (a_{11} = 1)**:
    $$
    C_{11} = \begin{vmatrix}
    -1 & 4 \\
