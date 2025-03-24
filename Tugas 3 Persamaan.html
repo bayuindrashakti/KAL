@@ -386,68 +386,91 @@ document.write(`
 <h1>Tugas 3 Persamaan<a class="headerlink" href="#tugas-3-persamaan" title="Link to this heading">#</a></h1>
 <p>Langkah 1: Menyusun Matriks</p>
 <p>Diberikan sistem persamaan linear:</p>
-<p>(x + 2y + 3z = 1)
-(3x - y + 4z = 3)
-(5x + y - 2z = 5)
-Kita menyusun sistem ini ke dalam bentuk matriks:</p>
-<p>Matriks Koefisien (A), Vektor Variabel (\mathbf{x}), dan Vektor Hasil (B):</p>
-<p>[ A = \begin{bmatrix} 1 &amp; 2 &amp; 3 \ 3 &amp; -1 &amp; 4 \ 5 &amp; 1 &amp; -2 \end{bmatrix}, \quad \mathbf{x} = \begin{bmatrix} x \ y \ z \end{bmatrix}, \quad B = \begin{bmatrix} 1 \ 3 \ 5 \end{bmatrix} ]</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+x + 2y + 3z &amp;= 1 \\
+3x - y + 4z &amp;= 3 \\
+5x + y - 2z &amp;= 5
+\end{align*}
+\end{split}\]</div>
+<p>Kita menyusun sistem ini ke dalam bentuk matriks:</p>
+<p>Matriks Koefisien (A), Vektor Variabel ((\mathbf{x})), dan Vektor Hasil (B):</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+A = \begin{bmatrix} 1 &amp; 2 &amp; 3 \\ 3 &amp; -1 &amp; 4 \\ 5 &amp; 1 &amp; -2 \end{bmatrix}, \quad \mathbf{x} = \begin{bmatrix} x \\ y \\ z \end{bmatrix}, \quad B = \begin{bmatrix} 1 \\ 3 \\ 5 \end{bmatrix}
+\end{split}\]</div>
 <p>Matriks sistem dapat dituliskan:</p>
-<p>[ A \mathbf{x} = B ]</p>
+<div class="math notranslate nohighlight">
+\[
+A \mathbf{x} = B
+\]</div>
 <p>Langkah 2: Menghitung Determinan Matriks (A)</p>
 <p>Kita perlu menghitung determinan dari matriks (A):</p>
-<p>[ \text{det}(A) = \begin{vmatrix} 1 &amp; 2 &amp; 3 \ 3 &amp; -1 &amp; 4 \ 5 &amp; 1 &amp; -2 \end{vmatrix} ]</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\text{det}(A) = \begin{vmatrix} 1 &amp; 2 &amp; 3 \\ 3 &amp; -1 &amp; 4 \\ 5 &amp; 1 &amp; -2 \end{vmatrix}
+\end{split}\]</div>
 <p>Menentukan Determinan:</p>
-<p>[ \text{det}(A) = 1 \cdot \begin{vmatrix} -1 &amp; 4 \ 1 &amp; -2 \end{vmatrix} - 2 \cdot \begin{vmatrix} 3 &amp; 4 \ 5 &amp; -2 \end{vmatrix} + 3 \cdot \begin{vmatrix} 3 &amp; -1 \ 5 &amp; 1 \end{vmatrix} ]</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\text{det}(A) = 1 \cdot \begin{vmatrix} -1 &amp; 4 \\ 1 &amp; -2 \end{vmatrix} - 2 \cdot \begin{vmatrix} 3 &amp; 4 \\ 5 &amp; -2 \end{vmatrix} + 3 \cdot \begin{vmatrix} 3 &amp; -1 \\ 5 &amp; 1 \end{vmatrix}
+\end{split}\]</div>
 <p>Hitungan Detail:</p>
-<p>[ = 1((-1)(-2) - (4)(1)) - 2((3)(-2) - (4)(5)) + 3((3)(1) - (-1)(5)) ]</p>
-<p>[ = 1(2 - 4) - 2(-6 - 20) + 3(3 + 5) ]</p>
-<p>[ = 1(-2) + 2(26) + 3(8) ]</p>
-<p>[ = -2 + 52 + 24 = 74 ]</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+\text{det}(A) &amp;= 1((-1)(-2) - (4)(1)) - 2((3)(-2) - (4)(5)) + 3((3)(1) - (-1)(5)) \\
+&amp;= 1(2 - 4) - 2(-6 - 20) + 3(3 + 5) \\
+&amp;= 1(-2) + 2(26) + 3(8) \\
+&amp;= -2 + 52 + 24 = 74
+\end{align*}
+\end{split}\]</div>
 <p>Karena (\text{det}(A) = 74 \neq 0), maka (A) memiliki invers.</p>
 <p>Langkah 3: Mencari Invers Matriks (A)</p>
 <p>Dengan determinan sudah dihitung, kita dapat menemukan invers dari matriks (A):</p>
-<p>[ A^{-1} = \frac{1}{\text{det}(A)} \cdot \text{adj}(A) ]</p>
+<div class="math notranslate nohighlight">
+\[
+A^{-1} = \frac{1}{\text{det}(A)} \cdot \text{adj}(A)
+\]</div>
 <p>Kalkulasi Invers:</p>
 <p>Setelah melalui proses perhitungan, kita mendapatkan:</p>
-<p>[ A^{-1} = \begin{bmatrix} \frac{1}{74} &amp; \frac{6}{74} &amp; \frac{10}{74} \ \frac{-5}{74} &amp; \frac{-1}{74} &amp; \frac{11}{74} \ \frac{1}{74} &amp; \frac{-5}{74} &amp; \frac{-2}{74} \end{bmatrix} ]</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+A^{-1} = \begin{bmatrix} \frac{1}{74} &amp; \frac{6}{74} &amp; \frac{10}{74} \\ \frac{-5}{74} &amp; \frac{-1}{74} &amp; \frac{11}{74} \\ \frac{1}{74} &amp; \frac{-5}{74} &amp; \frac{-2}{74} \end{bmatrix}
+\end{split}\]</div>
 <p>Langkah 4: Menghitung Solusi</p>
 <p>Dengan invers (A^{-1}) yang telah kita hitung, kita dapat menemukan solusi sistem persamaan dengan mengalikan (A^{-1}) dengan (B):</p>
-<p>[ \mathbf{x} = A^{-1} B ]</p>
+<div class="math notranslate nohighlight">
+\[
+\mathbf{x} = A^{-1} B
+\]</div>
 <p>Langkah 1: Vektor Hasil (B)</p>
 <p>Vektor hasil (B) yang kita miliki adalah:</p>
-<p>[ B = \begin{bmatrix} 1 \ 3 \ 5 \end{bmatrix} ]</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+B = \begin{bmatrix} 1 \\ 3 \\ 5 \end{bmatrix}
+\end{split}\]</div>
 <p>Langkah 2: Menghitung Produk Matriks</p>
 <p>Kita akan menghitung:</p>
-<p>[ \mathbf{x} = A^{-1} B ]</p>
+<div class="math notranslate nohighlight">
+\[
+\mathbf{x} = A^{-1} B
+\]</div>
 <p>Langkah 3: Mengalikan (A^{-1}) dan (B)</p>
 <p>Mari kita lakukan perhitungan matriks:</p>
 <p>Komponen pertama dari (\mathbf{x}):
-[ x = \frac{1}{74}(1) + \frac{6}{74}(3) + \frac{10}{74}(5) = \frac{1 + 18 + 50}{74} = \frac{69}{74} ]</p>
+$<span class="math notranslate nohighlight">\(
+x = \frac{1}{74}(1) + \frac{6}{74}(3) + \frac{10}{74}(5) = \frac{1 + 18 + 50}{74} = \frac{69}{74}
+\)</span>$</p>
 <p>Komponen kedua dari (\mathbf{x}):
-[ y = \frac{-5}{74}(1) + \frac{-1}{74}(3) + \frac{11}{74}(5) = \frac{-5 - 3 + 55}{74} = \frac{47}{74} ]</p>
+$<span class="math notranslate nohighlight">\(
+y = \frac{-5}{74}(1) + \frac{-1}{74}(3) + \frac{11}{74}(5) = \frac{-5 - 3 + 55}{74} = \frac{47}{74}
+\)</span>$</p>
 <p>Komponen ketiga dari (\mathbf{x}):
-[ z = \frac{1}{74}(1) + \frac{-5}{74}(3) + \frac{-2}{74}(5) = \frac{1 - 15 - 10}{74} = \frac{-24}{74} ]</p>
-<p>Langkah 4: Menyederhanakan Hasil</p>
-<p>Sekarang kita dapat menyederhanakan setiap komponen:</p>
-<p>(x = \frac{69}{74})
-(y = \frac{47}{74})
-(z = \frac{-24}{74})
-Hasil</p>
-<p>Setelah melakukan perhitungan, kita mendapatkan:</p>
-<p>[ \mathbf{x} = \begin{bmatrix} x \ y \ z \end{bmatrix} = \begin{bmatrix} \frac{69}{74} \ \frac{47}{74} \ \frac{-24}{74} \end{bmatrix} ]</p>
-<p>Namun, tampaknya ada kesalahan di dalam langkah-langkah perhitungan atau asumsi awal. Mari kita periksa nilai (x = 1), (y = 0), dan (z = 0) vs hasil yang didapat.</p>
-<p>Memeriksa Kembali</p>
-<p>Kita akan memverifikasi solusi dengan substitusi (x = 1), (y = 0), dan (z = 0) ke dalam sistem persamaan:</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}\begin{align*}
-(1 + 2(0) + 3(0) = 1)\\
-(3(1) - (0) + 4(0) = 3)\\
-(5(1) + (0) - 2(0) = 5)
-\end{align*}\end{split}\]</div>
-<p>Semua persamaan benar.</p>
-<p>Kesimpulan</p>
-<p>Sistem ini memang memiliki solusi (x = 1), (y = 0), dan (z = 0).</p>
+$<span class="math notranslate nohighlight">\(
+z = \frac{1}{74}(1) + \frac{-5}{74}(3) + \frac{-2}{74}(5) = \frac{1 - 15 - 10}
+\)</span>$</p>
 </section>
 
     <script type="text/x-thebe-config">
