@@ -1,6 +1,6 @@
 ### 3 Persamaan
 
-Diberikan tiga persamaan linear dengan tiga variabel $$\(x\), \(y\), dan \(z\):
+Diberikan tiga persamaan linear dengan tiga variabel (x), (y), dan (z):
 
 $$
 \begin{align*}
@@ -43,7 +43,7 @@ $$
 
 ### Langkah 2: Menghitung Determinan dari A
 
-Pertama, kita perlu menghitung determinan dari matriks $$\(A\):
+Pertama, kita perlu menghitung determinan dari matriks (A):
 
 $$
 \text{det}(A) = \begin{vmatrix}
@@ -68,31 +68,31 @@ $$
 \end{vmatrix}
 $$
 
-Mari kita hitung setiap determinan $$\(2 \times 2\):
+Mari kita hitung setiap determinan (2 x 2):
 
 1. **Pertama:**
-   $$
+   $
    \begin{vmatrix}
    -1 & 4 \\
    1 & -2
    \end{vmatrix} = (-1)(-2) - (4)(1) = 2 - 4 = -2
-   $$
+   $
 
 2. **Kedua:**
-   $$
+   $
    \begin{vmatrix}
    3 & 4 \\
    5 & -2
    \end{vmatrix} = (3)(-2) - (4)(5) = -6 - 20 = -26
-   $$
+   $
 
 3. **Ketiga:**
-   $$
+   $
    \begin{vmatrix}
    3 & -1 \\
    5 & 1
    \end{vmatrix} = (3)(1) - (-1)(5) = 3 + 5 = 8
-   $$
+   $
 
 Sekarang substitusikan kembali ke dalam determinan $$\(A\):
 
@@ -100,17 +100,17 @@ $$
 \text{det}(A) = 1(-2) - 2(-26) + 3(8) = -2 + 52 + 24 = 74
 $$
 
-Karena determinan tidak sama dengan nol $$(\(\text{det}(A) = 74\)), matriks \(A\) dapat di-invers.
+Karena determinan tidak sama dengan nol (74), matriks (A) dapat di-invers.
 
 ### Langkah 3: Menghitung Invers dari A
 
-Untuk menghitung invers dari $$\(A\), kita perlu menghitung adjoin \(A\).
+Untuk menghitung invers dari (A), kita perlu menghitung adjoin (A).
 
 **Kofaktor Matriks A:**
 
-Kita perlu menghitung kofaktor untuk setiap elemen dari matriks $$\(A\).
+Kita perlu menghitung kofaktor untuk setiap elemen dari matriks (A).
 
-1. **Untuk $$\(a_{11} = 1\)$$**:
+1. **Untuk $\(a_{11} = 1\)$**:
    $$
    C_{11} = \begin{vmatrix}
    -1 & 4 \\
@@ -118,7 +118,7 @@ Kita perlu menghitung kofaktor untuk setiap elemen dari matriks $$\(A\).
    \end{vmatrix} = -2
    $$
 
-2. **Untuk $$\(a_{12} = 2\)$$**:
+2. **Untuk $\(a_{12} = 2\)$**:
    $$
    C_{12} = -\begin{vmatrix}
    3 & 4 \\
@@ -126,7 +126,7 @@ Kita perlu menghitung kofaktor untuk setiap elemen dari matriks $$\(A\).
    \end{vmatrix} = 26
    $$
 
-3. **Untuk $$\(a_{13} = 3\)$$**:
+3. **Untuk $\(a_{13} = 3\)$**:
    $$
    C_{13} = \begin{vmatrix}
    3 & -1 \\
@@ -134,7 +134,7 @@ Kita perlu menghitung kofaktor untuk setiap elemen dari matriks $$\(A\).
    \end{vmatrix} = 8
    $$
 
-4. **Untuk $$\(a_{21} = 3\)$$**:
+4. **Untuk $\(a_{21} = 3\)$**:
    $$
    C_{21} = -\begin{vmatrix}
    2 & 3 \\
@@ -142,7 +142,7 @@ Kita perlu menghitung kofaktor untuk setiap elemen dari matriks $$\(A\).
    \end{vmatrix} = -(-4 - 3) = 7
    $$
 
-5. **Untuk $$\(a_{22} = -1\)$$**:
+5. **Untuk $\(a_{22} = -1\)$**:
    $$
    C_{22} = \begin{vmatrix}
    1 & 3 \\
@@ -150,7 +150,7 @@ Kita perlu menghitung kofaktor untuk setiap elemen dari matriks $$\(A\).
    \end{vmatrix} = -2 - 15 = -17
    $$
 
-6. **Untuk $$\(a_{23} = 4\)$$**:
+6. **Untuk $\(a_{23} = 4\)$**:
    $$
    C_{23} = -\begin{vmatrix}
    1 & 2 \\
@@ -158,7 +158,7 @@ Kita perlu menghitung kofaktor untuk setiap elemen dari matriks $$\(A\).
    \end{vmatrix} = -1 + 10 = 9
    $$
 
-7. **Untuk $$\(a_{31} = 5\)$$**:
+7. **Untuk $\(a_{31} = 5\)$**:
    $$
    C_{31} = \begin{vmatrix}
    2 & 3 \\
@@ -166,7 +166,7 @@ Kita perlu menghitung kofaktor untuk setiap elemen dari matriks $$\(A\).
    \end{vmatrix} = 8 + 3 = 11
    $$
 
-8. **Untuk $$\(a_{32} = 1\)$$**:
+8. **Untuk $\(a_{32} = 1\)$**:
    $$
    C_{32} = -\begin{vmatrix}
    1 & 3 \\
@@ -174,7 +174,7 @@ Kita perlu menghitung kofaktor untuk setiap elemen dari matriks $$\(A\).
    \end{vmatrix} = -4 + 9 = 5
    $$
 
-9. **Untuk $$\(a_{33} = -2\)$$**:
+9. **Untuk $\(a_{33} = -2\)$**:
    $$
    C_{33} = \begin{vmatrix}
    1 & 2 \\
@@ -184,7 +184,7 @@ Kita perlu menghitung kofaktor untuk setiap elemen dari matriks $$\(A\).
 
 ### Matriks Kofaktor dan Matriks Adjoin
 
-Maka kita mendapatkan matriks kofaktor $$\(C\)$$:
+Maka kita mendapatkan matriks kofaktor (C):
 
 $$
 C =
@@ -207,9 +207,9 @@ $$
 $$
 
 ### Menghitung Invers dari Matriks 
-$$\(A\)$$
+(A)
 
-Sekarang kita menghitung invers dari $$\(A\)$$ menggunakan rumus:
+Sekarang kita menghitung invers dari (A) menggunakan rumus:
 
 $$
 A^{-1} = \frac{1}{\text{det}(A)} \cdot \text{adj}(A)
