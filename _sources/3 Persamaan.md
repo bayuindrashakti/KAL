@@ -110,7 +110,7 @@ Untuk menghitung invers dari $$\(A\), kita perlu menghitung adjoin \(A\).
 
 Kita perlu menghitung kofaktor untuk setiap elemen dari matriks $$\(A\).
 
-1. **Untuk $$\(a_{11} = 1\)**:
+1. **Untuk $$\(a_{11} = 1\)$$**:
    $$
    C_{11} = \begin{vmatrix}
    -1 & 4 \\
@@ -118,7 +118,7 @@ Kita perlu menghitung kofaktor untuk setiap elemen dari matriks $$\(A\).
    \end{vmatrix} = -2
    $$
 
-2. **Untuk $$\(a_{12} = 2\)**:
+2. **Untuk $$\(a_{12} = 2\)$$**:
    $$
    C_{12} = -\begin{vmatrix}
    3 & 4 \\
@@ -126,7 +126,7 @@ Kita perlu menghitung kofaktor untuk setiap elemen dari matriks $$\(A\).
    \end{vmatrix} = 26
    $$
 
-3. **Untuk $$\(a_{13} = 3\)**:
+3. **Untuk $$\(a_{13} = 3\)$$**:
    $$
    C_{13} = \begin{vmatrix}
    3 & -1 \\
@@ -134,7 +134,7 @@ Kita perlu menghitung kofaktor untuk setiap elemen dari matriks $$\(A\).
    \end{vmatrix} = 8
    $$
 
-4. **Untuk $$\(a_{21} = 3\)**:
+4. **Untuk $$\(a_{21} = 3\)$$**:
    $$
    C_{21} = -\begin{vmatrix}
    2 & 3 \\
@@ -142,7 +142,7 @@ Kita perlu menghitung kofaktor untuk setiap elemen dari matriks $$\(A\).
    \end{vmatrix} = -(-4 - 3) = 7
    $$
 
-5. **Untuk $$\(a_{22} = -1\)**:
+5. **Untuk $$\(a_{22} = -1\)$$**:
    $$
    C_{22} = \begin{vmatrix}
    1 & 3 \\
@@ -150,7 +150,7 @@ Kita perlu menghitung kofaktor untuk setiap elemen dari matriks $$\(A\).
    \end{vmatrix} = -2 - 15 = -17
    $$
 
-6. **Untuk $$\(a_{23} = 4\)**:
+6. **Untuk $$\(a_{23} = 4\)$$**:
    $$
    C_{23} = -\begin{vmatrix}
    1 & 2 \\
@@ -158,7 +158,7 @@ Kita perlu menghitung kofaktor untuk setiap elemen dari matriks $$\(A\).
    \end{vmatrix} = -1 + 10 = 9
    $$
 
-7. **Untuk $$\(a_{31} = 5\)**:
+7. **Untuk $$\(a_{31} = 5\)$$**:
    $$
    C_{31} = \begin{vmatrix}
    2 & 3 \\
@@ -166,7 +166,7 @@ Kita perlu menghitung kofaktor untuk setiap elemen dari matriks $$\(A\).
    \end{vmatrix} = 8 + 3 = 11
    $$
 
-8. **Untuk $$\(a_{32} = 1\)**:
+8. **Untuk $$\(a_{32} = 1\)$$**:
    $$
    C_{32} = -\begin{vmatrix}
    1 & 3 \\
@@ -174,7 +174,7 @@ Kita perlu menghitung kofaktor untuk setiap elemen dari matriks $$\(A\).
    \end{vmatrix} = -4 + 9 = 5
    $$
 
-9. **Untuk $$\(a_{33} = -2\)**:
+9. **Untuk $$\(a_{33} = -2\)$$**:
    $$
    C_{33} = \begin{vmatrix}
    1 & 2 \\
@@ -184,7 +184,7 @@ Kita perlu menghitung kofaktor untuk setiap elemen dari matriks $$\(A\).
 
 ### Matriks Kofaktor dan Matriks Adjoin
 
-Maka kita mendapatkan matriks kofaktor $$\(C\):
+Maka kita mendapatkan matriks kofaktor $$\(C\)$$:
 
 $$
 C =
@@ -207,15 +207,15 @@ $$
 $$
 
 ### Menghitung Invers dari Matriks 
-$$\(A\)
+$$\(A\)$$
 
-Sekarang kita menghitung invers dari \(A\) menggunakan rumus:
+Sekarang kita menghitung invers dari $$\(A\)$$ menggunakan rumus:
 
 $$
 A^{-1} = \frac{1}{\text{det}(A)} \cdot \text{adj}(A)
 $$
 
-Dengan substitusi \( \text{det}(A) = 74 \):
+Dengan substitusi $$\( \text{det}(A) = 74 \)$$:
 
 $$
 A^{-1} = \frac{1}{74} \cdot 
@@ -238,9 +238,9 @@ A^{-1} =
 $$
 
 ### Langkah 6: Menghitung Vektor 
-$$\(X\)
+$$\(X\)$$
 
-Untuk menemukan vektor $$\(X\), kita substitusikan \(A^{-1}\) dan \(B\):
+Untuk menemukan vektor $$\(X\)$$, kita substitusikan $$\(A^{-1}\)$$ dan $$\(B\)$$:
 
 $$
 X = A^{-1} B
@@ -263,9 +263,9 @@ X =
 $$
 
 ### Menghitung Vektor 
-$$\(X\)
+$$\(X\)$$
 
-1. **Untuk \(x\)**:
+1. **Untuk $$\(x\)$$**:
    $$
    x = -\frac{2}{74} \cdot 1 + \frac{7}{74} \cdot 3 + \frac{11}{74} \cdot 5
    $$
