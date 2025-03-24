@@ -110,77 +110,77 @@ Untuk menghitung invers dari (A), kita perlu menghitung adjoin (A).
 
 Kita perlu menghitung kofaktor untuk setiap elemen dari matriks (A).
 
-1. **Untuk $(a_{11} = 1\)$**:
-   $$
+1. **Untuk $(a_{11} = 1)$**:
+   $
    C_{11} = \begin{vmatrix}
    -1 & 4 \\
    1 & -2
    \end{vmatrix} = -2
-   $$
+   $
 
-2. **Untuk $\(a_{12} = 2\)$**:
-   $$
+2. **Untuk $(a_{12} = 2)$**:
+   $
    C_{12} = -\begin{vmatrix}
    3 & 4 \\
    5 & -2
    \end{vmatrix} = 26
-   $$
+   $
 
-3. **Untuk $\(a_{13} = 3\)$**:
-   $$
+3. **Untuk $(a_{13} = 3)$**:
+   $
    C_{13} = \begin{vmatrix}
    3 & -1 \\
    5 & 1
    \end{vmatrix} = 8
-   $$
+   $
 
-4. **Untuk $\(a_{21} = 3\)$**:
-   $$
+4. **Untuk $(a_{21} = 3)$**:
+   $
    C_{21} = -\begin{vmatrix}
    2 & 3 \\
    1 & -2
    \end{vmatrix} = -(-4 - 3) = 7
-   $$
+   $
 
-5. **Untuk $\(a_{22} = -1\)$**:
-   $$
+5. **Untuk $(a_{22} = -1)$**:
+   $
    C_{22} = \begin{vmatrix}
    1 & 3 \\
    5 & -2
    \end{vmatrix} = -2 - 15 = -17
-   $$
+   $
 
-6. **Untuk $\(a_{23} = 4\)$**:
-   $$
+6. **Untuk $(a_{23} = 4)$**:
+   $
    C_{23} = -\begin{vmatrix}
    1 & 2 \\
    5 & 1
    \end{vmatrix} = -1 + 10 = 9
-   $$
+   $
 
-7. **Untuk $\(a_{31} = 5\)$**:
-   $$
+7. **Untuk $(a_{31} = 5)$**:
+   $
    C_{31} = \begin{vmatrix}
    2 & 3 \\
    -1 & 4
    \end{vmatrix} = 8 + 3 = 11
-   $$
+   $
 
-8. **Untuk $\(a_{32} = 1\)$**:
-   $$
+8. **Untuk $(a_{32} = 1)$**:
+   $
    C_{32} = -\begin{vmatrix}
    1 & 3 \\
    3 & 4
    \end{vmatrix} = -4 + 9 = 5
-   $$
+   $
 
-9. **Untuk $\(a_{33} = -2\)$**:
-   $$
+9. **Untuk $(a_{33} = -2)$**:
+   $
    C_{33} = \begin{vmatrix}
    1 & 2 \\
    3 & -1
    \end{vmatrix} = -1 - 6 = -7
-   $$
+   $
 
 ### Matriks Kofaktor dan Matriks Adjoin
 
@@ -240,7 +240,7 @@ $$
 ### Langkah 6: Menghitung Vektor 
 $$\(X\)$$
 
-Untuk menemukan vektor $$\(X\)$$, kita substitusikan $$\(A^{-1}\)$$ dan $$\(B\)$$:
+Untuk menemukan vektor $(X)$, kita substitusikan $(A^{-1})$$ dan $(B)$:
 
 $$
 X = A^{-1} B
@@ -263,7 +263,7 @@ X =
 $$
 
 ### Menghitung Vektor 
-$$\(X\)$$
+$(X)$
 
 1. **Untuk $$\(x\)$$**:
    $$
