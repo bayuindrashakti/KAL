@@ -266,7 +266,7 @@ $$
 $(X)$
 
 1. **Untuk $(x)$**:
-   $$
+   $
    x = -\frac{2}{74} \cdot 1 + \frac{7}{74} \cdot 3 + \frac{11}{74} \cdot 5
    $$
    $$
@@ -274,10 +274,10 @@ $(X)$
    $$
    $$
    x = \frac{-2 + 21 + 55}{74} = \frac{74}{74} = 1
-   $$
+   $
 
 2. **Untuk $(y)$**:
-   $$
+   $
    y = \frac{26}{74} \cdot 1 + \frac{-17}{74} \cdot 3 + \frac{5}{74} \cdot 5
    $$
    $$
@@ -285,10 +285,10 @@ $(X)$
    $$
    $$
    y = \frac{26 - 51 + 25}{74} = \frac{0}{74} = 0
-   $$
+   $
 
 3. **Untuk $(z)$**:
-   $$
+   $
    z = \frac{8}{74} \cdot 1 + \frac{9}{74} \cdot 3 + \frac{-7}{74} \cdot 5
    $$
    $$
@@ -296,11 +296,11 @@ $(X)$
    $$
    $$
    z = \frac{8 + 27 - 35}{74} = \frac{0}{74} = 0
-   $$
+   $
 
 ### Hasil Akhir
 
-Setelah melakukan perhitungan, kita menemukan bahwa nilai-nilai dari variabel $$\(x\), \(y\), dan \(z\) adalah:
+Setelah melakukan perhitungan, kita menemukan bahwa nilai-nilai dari variabel $(x)$, $(y)$, dan $(z)$ adalah:
 
 $$
 x = 1, \quad y = 0, \quad z = 0
@@ -308,4 +308,4 @@ $$
 
 ### Kesimpulan
 
-Dengan demikian, kita telah membuktikan bahwa solusi dari sistem persamaan linear yang diberikan adalah $$\(x = 1\), \(y = 0\), dan \(z = 0\). Solusi ini memenuhi semua persamaan dalam sistem yang diberikan, sehingga hasil ini valid.
+Dengan demikian, kita telah membuktikan bahwa solusi dari sistem persamaan linear yang diberikan adalah $(x = 1), (y = 0), dan (z = 0)$. Solusi ini memenuhi semua persamaan dalam sistem yang diberikan, sehingga hasil ini valid.
