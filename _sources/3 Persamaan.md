@@ -126,7 +126,7 @@ Dari persamaan pertama:
 $[
 x + 2y + 3z = 1
 ]$
-Dengan substitusi $(y = 0) dan (z = 0)$:
+Dengan substitusi $(y = 0)$ dan $(z = 0)$:
 $$[
 x + 2(0) + 3(0) = 1
 ]$
