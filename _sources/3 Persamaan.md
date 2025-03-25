@@ -79,7 +79,7 @@ $$[
 Sekarang kita akan menghilangkan elemen di bawah $( -7 ) untuk mendapatkan (0)$ pada baris ketiga:
 
 - **Mengupdate baris ketiga**:
-$$[
+$[
 R_3 = R_3 - \frac{9}{7}R_2 
 ]$$
 $$[
@@ -87,7 +87,7 @@ R_3 = [0, -9, -17 | 0] - \frac{9}{7} \times [0, -7, -5 | 0]
 ]$$
 $$[
 R_3 = [0, -9 + 9, -17 + \frac{45}{7} | 0 - 0] = [0, 0, -\frac{11}{7} | 0]
-\]$$
+]$
 
 Setelah eliminasi, matriksnya menjadi:
 
@@ -126,7 +126,7 @@ Dari persamaan pertama:
 $[
 x + 2y + 3z = 1
 ]$
-Dengan substitusi $\(y = 0\) dan \(z = 0\)$:
+Dengan substitusi $(y = 0) dan (z = 0)$:
 $$[
 x + 2(0) + 3(0) = 1
 ]$
