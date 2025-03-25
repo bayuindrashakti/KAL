@@ -1,4 +1,4 @@
-### 3 Persamaan
+### Invers Matriks
 
 Diberikan tiga persamaan linear dengan tiga variabel (x), (y), dan (z):
 
