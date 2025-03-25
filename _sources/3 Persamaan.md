@@ -15,33 +15,33 @@ Mari kita selesaikan langkah-langkah penyelesaian sistem persamaan linear diatas
 ### Langkah 1: Menyusun Matriks Augmented
 Kita mulai dengan menuliskan sistem persamaan dalam bentuk matriks. Matriks koefisien untuk sistem ini adalah:
 
-$$\[
+$$[
 A = \begin{bmatrix}
 1 & 2 & 3 \\
 3 & -1 & 4 \\
 5 & 1 & -2
 \end{bmatrix}
-\]$$
+]$$
 
 Dan matriks konstanta (hasil dari persamaan) adalah:
 
-$$\[
+$$[
 B = \begin{bmatrix}
 1 \\
 3 \\
 5
 \end{bmatrix}
-\]$$
+]$$
 
 Sehingga kita dapat menyusun matriks augmented $( [A | B] )$:
 
-$$\[
+$$[
 \begin{bmatrix}
 1 & 2 & 3 & | & 1 \\
 3 & -1 & 4 & | & 3 \\
 5 & 1 & -2 & | & 5
 \end{bmatrix}
-\]$$
+]$$
 
 ### Langkah 2: Menggunakan Eliminasi Gauss
 Kita akan melakukan operasi baris elementer untuk mengubah matriks menjadi bentuk eselon.
