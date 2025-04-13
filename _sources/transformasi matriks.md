@@ -46,7 +46,7 @@ A\vec{y} = \begin{bmatrix}
 ]$
 
 The vectors are sketched in Figure 5.1.2.
-![Alt text](path/to/figure5.1.2.png)
+(path/to/figure5.1.2.png)
 
 Ada beberapa hal yang perlu diperhatikan. Ketika setiap vektor dikalikan dengan A, hasilnya adalah vektor dengan panjang yang berbeda (dalam contoh ini, selalu lebih panjang), dan dalam dua kasus (untuk ⃗y dan \vz), vektor yang dihasilkan mengarah ke arah yang berbeda. Ini tidak mengejutkan. Pada bagian sebelumnya, kita belajar tentang perkalian matriks, yang merupakan operasi yang aneh dan tampaknya tidak dapat diprediksi. Apakah Anda mengharapkan menemukan pola yang langsung dikenali dari mengalikan matriks dan vektor? (Ini adalah pertanyaan retoris; jawaban yang diharapkan adalah "Tidak. ") Faktanya, hal yang mengejutkan dari contoh ini adalah ⃗x dan A⃗x mengarah ke arah yang sama! Mengapa arah ⃗x tidak berubah setelah dikalikan dengan A? (Kita akan menjawab ini di Bagian 7. 1 saat kita belajar tentang sesuatu yang disebut "vektor eigen. ") 
 
