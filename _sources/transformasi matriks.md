@@ -1,5 +1,5 @@
 ## Matrix Transformations
- Tujuan kita adalah untuk mendapatkan pemahaman visual tentang definisi perkalian matriks yang diajukan di Bagian 4. 2. Meskipun definisi aljabar perkalian matriks terlihat aneh pada awalnya, kita akan melihat bahwa definisi ini memungkinkan kita menggunakan matriks untuk mendefinisikan fungsi yang mengubah satu vektor menjadi vektor lainnya. 
+ Tujuan kita adalah untuk mendapatkan pemahaman visual tentang definisi perkalian matriks kita akan melihat bahwa definisi ini memungkinkan kita menggunakan matriks untuk mendefinisikan fungsi yang mengubah satu vektor menjadi vektor lainnya. 
 
 Diberikan matriks A berukuran m×n, kita dapat mendefinisikan fungsi T yang mengambil vektor kolom n×1 ⃗x ∈ Rn sebagai input, dan menghasilkan vektor kolom m×1 ⃗y ∈ Rm sebagai output, sesuai dengan hubungan
  ⃗⃗y = T(⃗x) = A⃗x. 
@@ -8,29 +8,29 @@ Fungsi ini dikenal sebagai transformasi matriks, dan merupakan contoh dari klasi
 Untuk menyederhanakan diskusi, kita akan fokus pada vektor dalam R2. Kita ingin memvisualisasikan hasil penggandaan vektor dengan matriks. Agar bisa mengalikan vektor 2D dengan matriks dan mendapatkan vektor 2D kembali, matriks kita harus berupa matriks kuadrat berukuran 2 × 2. Kita akan memulai dengan contoh. Diberikan matriks A dan beberapa vektor, kita akan menggambar vektor sebelum dan setelah dikalikan dengan A 
 
 Mengalikan vektor dengan matriks. Misalkan A adalah matriks, dan ⃗x, ⃗y, dan ⃗z adalah vektor seperti yang diberikan di bawah ini. 
-$\[
-7A = \begin{bmatrix}
-81 & 4 \\
-92 & 3
-10\end{bmatrix}, \quad
-11\mathbf{x} = \begin{bmatrix}
-121 \\
-131
-14\end{bmatrix}, \quad
-15\mathbf{y} = \begin{bmatrix}
-16-1 \\
-171
-18\end{bmatrix}, \quad
-19\mathbf{z} = \begin{bmatrix}
-203 \\
-21-1
-22\end{bmatrix}.
-23\]$
+$[
+A = \begin{bmatrix}
+1 & 4 \\
+2 & 3
+\end{bmatrix}, \quad
+\mathbf{x} = \begin{bmatrix}
+1 \\
+1
+\end{bmatrix}, \quad
+\mathbf{y} = \begin{bmatrix}
+-1 \\
+1
+\end{bmatrix}, \quad
+\mathbf{z} = \begin{bmatrix}
+3 \\
+-1
+\end{bmatrix}.
+]$
 
 Graph ⃗x, ⃗y and ⃗z, as well as A⃗x, A⃗y and A⃗z.
 
 Solution. It is straightforward to compute:
-$\[
+$[
 A\vec{x} = \begin{bmatrix}
 5 \\
 5
@@ -43,7 +43,8 @@ A\vec{y} = \begin{bmatrix}
 -1 \\
 3
 \end{bmatrix}.
-\]$
+]$
+
 The vectors are sketched in Figure 5.1.2.
 ![Alt text](path/to/figure5.1.2.png)
 
@@ -54,7 +55,7 @@ Matriks yang berbeda bertindak pada vektor dengan cara yang berbeda. (Itu sebabn
 Bagaimana kita mempelajari bagaimana perkalian matriks mempengaruhi vektor? Kita bisa saja membuat banyak matriks berbeda dan banyak vektor berbeda, mengalikan, lalu menggambar, tetapi ini akan menjadi pekerjaan yang sangat berat dengan hasil yang sedikit berguna. Akan terlalu sulit menemukan pola perilaku dalam hal ini. (Ingat, itu yang dilakukan matematikawan. Kami mencari pola. ) Sebagai gantinya, kita akan mulai dengan menggunakan teknik yang sering kita gunakan di masa lalu. Kita memiliki operasi "baru"; mari kita eksplorasi bagaimana perilakunya dengan operasi "lama". Secara spesifik, kita tahu cara membuat sketsa penjumlahan vektor. Apa yang terjadi ketika kita memasukkan perkalian matriks ke dalam campuran? Mari kita coba contoh.
 Contoh 5.1.3 Menggabungkan penjumlahan dan perkalian matriks.
 Misalkan A adalah suatu matriks dan ⃗x dan ⃗y adalah vektor seperti yang diberikan di bawah ini.
-$\[
+$[
 A = \begin{bmatrix}
 1 & 1 \\
 1 & 2 
@@ -67,10 +68,10 @@ A = \begin{bmatrix}
 -1 \\
 1 
 \end{bmatrix}.
-\]$
+]$
 Sketch ⃗x + ⃗y, A⃗x, A⃗y, and A(⃗x + ⃗y).
 
 solusi.
-$\[
+$[
 8\mathbf{x} + \mathbf{y} = \begin{bmatrix} 1 \\ 2 \end{bmatrix}; \quad A \mathbf{x} = \begin{bmatrix} 3 \\ 4 \end{bmatrix}; \quad A \mathbf{y} = \begin{bmatrix} 0 \\ 1 \end{bmatrix}, \quad A(\mathbf{x} + \mathbf{y}) = \begin{bmatrix} 3 \\ 5 \end{bmatrix} .
-9\]$
+9]$
