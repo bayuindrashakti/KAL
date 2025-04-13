@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Welcome to Komputasi Aljabar Linier &#8212; My sample book</title>
+    <title>Matrix Transformations &#8212; My sample book</title>
   
   
   
@@ -59,10 +59,10 @@
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'intro';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'transformasi matriks';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Linier dan Tidak Linier" href="Linier%20dan%20Tidak%20Linier.html" />
+    <link rel="prev" title="Invers Matriks" href="3%20Persamaan.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -125,8 +125,6 @@
       
       
       
-        
-      
       <div class="bd-sidebar-primary bd-sidebar">
         
 
@@ -145,7 +143,7 @@
     
   
 
-<a class="navbar-brand logo" href="#">
+<a class="navbar-brand logo" href="intro.html">
   
   
   
@@ -176,13 +174,13 @@
     <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
-            <li class="toctree-l1 current active">
-                <a class="reference internal" href="#">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
                     Welcome to Komputasi Aljabar Linier
                 </a>
             </li>
         </ul>
-        <ul class="nav bd-sidenav">
+        <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="Linier%20dan%20Tidak%20Linier.html">Linier dan Tidak Linier</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Sistem%20Persamaan%20Linier.html">Sistem Persamaan Linier</a></li>
 
@@ -197,7 +195,7 @@
 
 
 
-<li class="toctree-l1"><a class="reference internal" href="transformasi%20matriks.html">Matrix Transformations</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Matrix Transformations</a></li>
 </ul>
 
     </div>
@@ -269,7 +267,7 @@
       
       
       
-      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fintro.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Ftransformasi matriks.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -299,7 +297,7 @@
       
       
       
-      <li><a href="_sources/intro.md" target="_blank"
+      <li><a href="_sources/transformasi matriks.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -381,7 +379,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Welcome to Komputasi Aljabar Linier</h1>
+    <h1>Matrix Transformations</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -395,11 +393,74 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="welcome-to-komputasi-aljabar-linier">
-<h1>Welcome to Komputasi Aljabar Linier<a class="headerlink" href="#welcome-to-komputasi-aljabar-linier" title="Link to this heading">#</a></h1>
-<p>Komputasi aljabar linier adalah cabang matematika yang mempelajari vektor, matriks, dan sistem persamaan linier, serta transformasi linier yang menghubungkan objek-objek tersebut. Dalam konteks komputasi, aljabar linier digunakan untuk menyelesaikan berbagai masalah di bidang ilmu komputer, statistik, fisika, dan teknik, seperti dalam algoritma machine learning, grafika komputer, dan optimasi. Konsep kunci dalam aljabar linier meliputi vektor, matriks, ruang vektor, serta eigenvalue dan eigenvector, yang semuanya berperan penting dalam analisis data dan pemodelan matematis.</p>
-<div class="toctree-wrapper compound">
-</div>
+  <section id="matrix-transformations">
+<h1>Matrix Transformations<a class="headerlink" href="#matrix-transformations" title="Link to this heading">#</a></h1>
+<p>Tujuan kita adalah untuk mendapatkan pemahaman visual tentang definisi perkalian matriks yang diajukan di Bagian 4. 2. Meskipun definisi aljabar perkalian matriks terlihat aneh pada awalnya, kita akan melihat bahwa definisi ini memungkinkan kita menggunakan matriks untuk mendefinisikan fungsi yang mengubah satu vektor menjadi vektor lainnya.</p>
+<p>Diberikan matriks A berukuran m×n, kita dapat mendefinisikan fungsi T yang mengambil vektor kolom n×1 ⃗x ∈ Rn sebagai input, dan menghasilkan vektor kolom m×1 ⃗y ∈ Rm sebagai output, sesuai dengan hubungan
+⃗⃗y = T(⃗x) = A⃗x.
+Fungsi ini dikenal sebagai transformasi matriks, dan merupakan contoh dari klasifikasi fungsi yang lebih umum antara ruang vektor yang disebut transformasi linear. Representasi grafis vektor memungkinkan kita untuk memvisualisasikan transformasi matriks, yang berperan penting dalam aplikasi seperti grafik komputer.</p>
+<p>Untuk menyederhanakan diskusi, kita akan fokus pada vektor dalam R2. Kita ingin memvisualisasikan hasil penggandaan vektor dengan matriks. Agar bisa mengalikan vektor 2D dengan matriks dan mendapatkan vektor 2D kembali, matriks kita harus berupa matriks kuadrat berukuran 2 × 2. Kita akan memulai dengan contoh. Diberikan matriks A dan beberapa vektor, kita akan menggambar vektor sebelum dan setelah dikalikan dengan A</p>
+<p>Mengalikan vektor dengan matriks. Misalkan A adalah matriks, dan ⃗x, ⃗y, dan ⃗z adalah vektor seperti yang diberikan di bawah ini.
+<span class="math notranslate nohighlight">\(\[
+7A = \begin{bmatrix}
+81 &amp; 4 \\
+92 &amp; 3
+10\end{bmatrix}, \quad
+11\mathbf{x} = \begin{bmatrix}
+121 \\
+131
+14\end{bmatrix}, \quad
+15\mathbf{y} = \begin{bmatrix}
+16-1 \\
+171
+18\end{bmatrix}, \quad
+19\mathbf{z} = \begin{bmatrix}
+203 \\
+21-1
+22\end{bmatrix}.
+23\]\)</span></p>
+<p>Graph ⃗x, ⃗y and ⃗z, as well as A⃗x, A⃗y and A⃗z.</p>
+<p>Solution. It is straightforward to compute:
+<span class="math notranslate nohighlight">\(\[
+A\vec{x} = \begin{bmatrix}
+5 \\
+5
+\end{bmatrix}, 
+A\vec{y} = \begin{bmatrix}
+3 \\
+1
+\end{bmatrix}, 
+\text{and } A\vec{z} = \begin{bmatrix}
+-1 \\
+3
+\end{bmatrix}.
+\]\)</span>
+The vectors are sketched in Figure 5.1.2.
+<img alt="Alt text" src="path/to/figure5.1.2.png" /></p>
+<p>Ada beberapa hal yang perlu diperhatikan. Ketika setiap vektor dikalikan dengan A, hasilnya adalah vektor dengan panjang yang berbeda (dalam contoh ini, selalu lebih panjang), dan dalam dua kasus (untuk ⃗y dan \vz), vektor yang dihasilkan mengarah ke arah yang berbeda. Ini tidak mengejutkan. Pada bagian sebelumnya, kita belajar tentang perkalian matriks, yang merupakan operasi yang aneh dan tampaknya tidak dapat diprediksi. Apakah Anda mengharapkan menemukan pola yang langsung dikenali dari mengalikan matriks dan vektor? (Ini adalah pertanyaan retoris; jawaban yang diharapkan adalah “Tidak. “) Faktanya, hal yang mengejutkan dari contoh ini adalah ⃗x dan A⃗x mengarah ke arah yang sama! Mengapa arah ⃗x tidak berubah setelah dikalikan dengan A? (Kita akan menjawab ini di Bagian 7. 1 saat kita belajar tentang sesuatu yang disebut “vektor eigen. “)</p>
+<p>Matriks yang berbeda bertindak pada vektor dengan cara yang berbeda. (Itu sebabnya kita menyebutnya “berbeda. “) Beberapa selalu meningkatkan panjang vektor melalui perkalian, yang lain selalu mengurangi panjang, beberapa meningkatkan panjang beberapa vektor dan mengurangi panjang yang lain, dan yang lainnya tidak mengubah panjang sama sekali. Pernyataan serupa dapat dibuat tentang bagaimana matriks mempengaruhi arah vektor melalui perkalian: beberapa mengubah arah setiap vektor, beberapa mengubah arah “kebanyakan” vektor tetapi membiarkan beberapa tetap sama, dan yang lainnya masih tidak mengubah arah vektor mana pun.</p>
+<p>Bagaimana kita mempelajari bagaimana perkalian matriks mempengaruhi vektor? Kita bisa saja membuat banyak matriks berbeda dan banyak vektor berbeda, mengalikan, lalu menggambar, tetapi ini akan menjadi pekerjaan yang sangat berat dengan hasil yang sedikit berguna. Akan terlalu sulit menemukan pola perilaku dalam hal ini. (Ingat, itu yang dilakukan matematikawan. Kami mencari pola. ) Sebagai gantinya, kita akan mulai dengan menggunakan teknik yang sering kita gunakan di masa lalu. Kita memiliki operasi “baru”; mari kita eksplorasi bagaimana perilakunya dengan operasi “lama”. Secara spesifik, kita tahu cara membuat sketsa penjumlahan vektor. Apa yang terjadi ketika kita memasukkan perkalian matriks ke dalam campuran? Mari kita coba contoh.
+Contoh 5.1.3 Menggabungkan penjumlahan dan perkalian matriks.
+Misalkan A adalah suatu matriks dan ⃗x dan ⃗y adalah vektor seperti yang diberikan di bawah ini.
+<span class="math notranslate nohighlight">\(\[
+A = \begin{bmatrix}
+1 &amp; 1 \\
+1 &amp; 2 
+\end{bmatrix}, \quad 
+\mathbf{x} = \begin{bmatrix}
+2 \\
+1 
+\end{bmatrix}, \quad 
+\mathbf{y} = \begin{bmatrix}
+-1 \\
+1 
+\end{bmatrix}.
+\]\)</span>
+Sketch ⃗x + ⃗y, A⃗x, A⃗y, and A(⃗x + ⃗y).</p>
+<p>solusi.
+<span class="math notranslate nohighlight">\(\[
+8\mathbf{x} + \mathbf{y} = \begin{bmatrix} 1 \\ 2 \end{bmatrix}; \quad A \mathbf{x} = \begin{bmatrix} 3 \\ 4 \end{bmatrix}; \quad A \mathbf{y} = \begin{bmatrix} 0 \\ 1 \end{bmatrix}, \quad A(\mathbf{x} + \mathbf{y}) = \begin{bmatrix} 3 \\ 5 \end{bmatrix} .
+9\]\)</span></p>
 </section>
 
     <script type="text/x-thebe-config">
@@ -432,14 +493,14 @@ document.write(`
                 <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
-    <a class="right-next"
-       href="Linier%20dan%20Tidak%20Linier.html"
-       title="next page">
+    <a class="left-prev"
+       href="3%20Persamaan.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Linier dan Tidak Linier</p>
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Invers Matriks</p>
       </div>
-      <i class="fa-solid fa-angle-right"></i>
     </a>
 </div>
                 </footer>
