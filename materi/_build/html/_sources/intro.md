@@ -1,0 +1,3 @@
+# Welcome to Komputasi Aljabar Linier
+
+Komputasi aljabar linier adalah cabang matematika yang mempelajari vektor, matriks, dan sistem persamaan linier, serta transformasi linier yang menghubungkan objek-objek tersebut. Dalam konteks komputasi, aljabar linier digunakan untuk menyelesaikan berbagai masalah di bidang ilmu komputer, statistik, fisika, dan teknik, seperti dalam algoritma machine learning, grafika komputer, dan optimasi. Konsep kunci dalam aljabar linier meliputi vektor, matriks, ruang vektor, serta eigenvalue dan eigenvector, yang semuanya berperan penting dalam analisis data dan pemodelan matematis.
