@@ -126,7 +126,7 @@ A = \begin{bmatrix}
 \end{bmatrix}
 $$
 
-### Contoh:
+### Contoh 1:
 
 Jika kita memiliki titik P(3, 4), maka refleksi P ke sumbu X adalah:
 
@@ -143,25 +143,253 @@ P' = A \cdot P = \begin{bmatrix}
 \end{bmatrix}
 $$
 
-<iframe src="https://www.geogebra.org/classic/hsc32rz5?embed" width="800" height="600" allowfullscreen style="border: 1px solid #e4e4e4;border-radius: 4px;" frameborder="0"></iframe>
+<iframe src="https://www.geogebra.org/classic/hsc32rz5?embed" width="600" height="600" allowfullscreen style="border: 1px solid #e4e4e4;border-radius: 4px;" frameborder="0"></iframe>
 
 Jadi, titik P(3, 4) setelah direfleksikan ke sumbu X menjadi P'(3, -4).
 
+### Contoh 2:
 
-<iframe src="https://www.geogebra.org/calculator/dat2aayf?embed" width="800" height="600" allowfullscreen style="border: 1px solidrgb(3, 3, 3);border-radius: 4px;" frameborder="0"></iframe>
+Jika kita memiliki titik Q(-2, 5), maka refleksi Q ke sumbu X adalah:
+
+$$
+Q' = A \cdot Q = \begin{bmatrix}
+1 & 0 \\
+0 & -1
+\end{bmatrix} \cdot \begin{bmatrix}
+-2 \\
+5
+\end{bmatrix} = \begin{bmatrix}
+-2 \\
+-5
+\end{bmatrix}
+$$
+
+<iframe src="https://www.geogebra.org/classic/muftjp5z?embed" width="600" height="600" allowfullscreen style="border: 1px solid #e4e4e4;border-radius: 4px;" frameborder="0"></iframe>
+
+Jadi, titik Q(-2, 5) setelah direfleksikan ke sumbu X menjadi Q'(-2, -5).
+
+---
 
 ## Refleksi ke Sumbu Y
 
-<iframe src="https://www.geogebra.org/calculator/dat2aayf?embed" width="800" height="600" allowfullscreen style="border: 1px solid #e4e4e4;border-radius: 4px;" frameborder="0"></iframe>
+Refleksi ke sumbu Y memetakan setiap titik (x, y) ke (-x, y). Matriks yang merepresentasikan refleksi ini adalah:
+
+$$
+A = \begin{bmatrix}
+-1 & 0 \\
+0 & 1
+\end{bmatrix}
+$$
+
+### Contoh 1:
+
+Jika kita memiliki titik P(3, 4), maka refleksi P ke sumbu Y adalah:
+
+$$
+P' = A \cdot P = \begin{bmatrix}
+-1 & 0 \\
+0 & 1
+\end{bmatrix} \cdot \begin{bmatrix}
+3 \\
+4
+\end{bmatrix} = \begin{bmatrix}
+-3 \\
+4
+\end{bmatrix}
+$$
+
+<iframe src="https://www.geogebra.org/classic/hsc32rz5?embed" width="600" height="600" allowfullscreen style="border: 1px solid #e4e4e4;border-radius: 4px;" frameborder="0"></iframe>
+
+Jadi, titik P(3, 4) setelah direfleksikan ke sumbu Y menjadi P'(-3, 4).
+
+### Contoh 2:
+
+Jika kita memiliki titik Q(-1, 2), maka refleksi Q ke sumbu Y adalah:
+
+$$
+Q' = A \cdot Q = \begin{bmatrix}
+-1 & 0 \\
+0 & 1
+\end{bmatrix} \cdot \begin{bmatrix}
+-1 \\
+2
+\end{bmatrix} = \begin{bmatrix}
+1 \\
+2
+\end{bmatrix}
+$$
+
+<iframe src="https://www.geogebra.org/classic/njghhmk5?embed" width="600" height="600" allowfullscreen style="border: 1px solid #e4e4e4;border-radius: 4px;" frameborder="0"></iframe>
+
+Jadi, titik Q(-1, 2) setelah direfleksikan ke sumbu Y menjadi Q'(1, 2).
+
+---
 
 ## Refleksi ke Sumbu X = Y
 
-<iframe src="https://www.geogebra.org/calculator/dat2aayf?embed" width="800" height="600" allowfullscreen style="border: 1px solid #e4e4e4;border-radius: 4px;" frameborder="0"></iframe>
+Refleksi ke sumbu X = Y memetakan setiap titik (x, y) ke (y, x). Matriks yang merepresentasikan refleksi ini adalah:
+
+$$
+A = \begin{bmatrix}
+0 & 1 \\
+1 & 0
+\end{bmatrix}
+$$
+
+### Contoh 1:
+
+Jika kita memiliki titik P(3, 4), maka refleksi P ke sumbu X = Y adalah:
+
+$$
+P' = A \cdot P = \begin{bmatrix}
+0 & 1 \\
+1 & 0
+\end{bmatrix} \cdot \begin{bmatrix}
+3 \\
+4
+\end{bmatrix} = \begin{bmatrix}
+4 \\
+3
+\end{bmatrix}
+$$
+
+<iframe src="https://www.geogebra.org/classic/gcsnqvss?embed" width="600" height="600" allowfullscreen style="border: 1px solid #e4e4e4;border-radius: 4px;" frameborder="0"></iframe>
+
+Jadi, titik P(3, 4) setelah direfleksikan ke sumbu X = Y menjadi P'(4, 3).
+
+### Contoh 2:
+
+Jika kita memiliki titik Q(5, -2), maka refleksi Q ke sumbu X = Y adalah:
+
+$$
+Q' = A \cdot Q = \begin{bmatrix}
+0 & 1 \\
+1 & 0
+\end{bmatrix} \cdot \begin{bmatrix}
+5 \\
+-2
+\end{bmatrix} = \begin{bmatrix}
+-2 \\
+5
+\end{bmatrix}
+$$
+
+<iframe src="https://www.geogebra.org/classic/rv8xrwvp?embed" width="600" height="600" allowfullscreen style="border: 1px solid #e4e4e4;border-radius: 4px;" frameborder="0"></iframe>
+
+Jadi, titik Q(5, -2) setelah direfleksikan ke sumbu X = Y menjadi Q'(-2, 5).
+
+---
 
 ## Refleksi ke Sumbu Y = -X
 
-<iframe src="https://www.geogebra.org/calculator/dat2aayf?embed" width="800" height="600" allowfullscreen style="border: 1px solid #e4e4e4;border-radius: 4px;" frameborder="0"></iframe>
+Refleksi ke sumbu Y = -X memetakan setiap titik (x, y) ke (-y, -x). Matriks yang merepresentasikan refleksi ini adalah:
+
+$$
+A = \begin{bmatrix}
+0 & -1 \\
+-1 & 0
+\end{bmatrix}
+$$
+
+### Contoh 1:
+
+Jika kita memiliki titik P(3, 4), maka refleksi P ke sumbu Y = -X adalah:
+
+$$
+P' = A \cdot P = \begin{bmatrix}
+0 & -1 \\
+-1 & 0
+\end{bmatrix} \cdot \begin{bmatrix}
+3 \\
+4
+\end{bmatrix} = \begin{bmatrix}
+-4 \\
+-3
+\end{bmatrix}
+$$
+
+<iframe src="https://www.geogebra.org/classic/duxfp6jg?embed" width="600" height="600" allowfullscreen style="border: 1px solid #e4e4e4;border-radius: 4px;" frameborder="0"></iframe>
+
+Jadi, titik P(3, 4) setelah direfleksikan ke sumbu Y = -X menjadi P'(-4, -3).
+
+### Contoh 2:
+
+Jika kita memiliki titik Q(-2, 5), maka refleksi Q ke sumbu Y = -X adalah:
+
+$$
+Q' = A \cdot Q = \begin{bmatrix}
+0 & -1 \\
+-1 & 0
+\end{bmatrix} \cdot \begin{bmatrix}
+-2 \\
+5
+\end{bmatrix} = \begin{bmatrix}
+-5 \\
+2
+\end{bmatrix}
+$$
+
+<iframe src="https://www.geogebra.org/classic/bkwps2tw?embed" width="600" height="600" allowfullscreen style="border: 1px solid #e4e4e4;border-radius: 4px;" frameborder="0"></iframe>
+
+Jadi, titik Q(-2, 5) setelah direfleksikan ke sumbu Y = -X menjadi Q'(-5, 2).
+
+---
 
 ## Refleksi ke Titik Asal (0,0)
 
-<iframe src="https://www.geogebra.org/calculator/dat2aayf?embed" width="800" height="600" allowfullscreen style="border: 1px solid #e4e4e4;border-radius: 4px;" frameborder="0"></iframe>
+Refleksi ke titik asal (0,0) memetakan setiap titik (x, y) ke (-x, -y). Matriks yang merepresentasikan refleksi ini adalah:
+
+$$
+A = \begin{bmatrix}
+-1 & 0 \\
+0 & -1
+\end{bmatrix}
+$$
+
+### Contoh 1:
+
+Jika kita memiliki titik P(3, 4), maka refleksi P ke titik asal adalah:
+
+$$
+P' = A \cdot P = \begin{bmatrix}
+-1 & 0 \\
+0 & -1
+\end{bmatrix} \cdot \begin{bmatrix}
+3 \\
+4
+\end{bmatrix} = \begin{bmatrix}
+-3 \\
+-4
+\end{bmatrix}
+$$
+
+<iframe src="https://www.geogebra.org/classic/arpgjye8?embed" width="600" height="600" allowfullscreen style="border: 1px solid #e4e4e4;border-radius: 4px;" frameborder="0"></iframe>
+
+Jadi, titik P(3, 4) setelah direfleksikan ke titik asal (0,0) menjadi P'(-3, -4).
+
+### Contoh 2:
+
+Jika kita memiliki titik Q(-1, 2), maka refleksi Q ke titik asal adalah:
+
+$$
+Q' = A \cdot Q = \begin{bmatrix}
+-1 & 0 \\
+0 & -1
+\end{bmatrix} \cdot \begin{bmatrix}
+-1 \\
+2
+\end{bmatrix} = \begin{bmatrix}
+1 \\
+-2
+\end{bmatrix}
+$$
+
+<iframe src="https://www.geogebra.org/classic/s5mh4rry?embed" width="600" height="600" allowfullscreen style="border: 1px solid #e4e4e4;border-radius: 4px;" frameborder="0"></iframe>
+
+Jadi, titik Q(-1, 2) setelah direfleksikan ke titik asal (0,0) menjadi Q'(1, -2).
+
+---
+
+## Kesimpulan
+
+Transformasi refleksi adalah alat yang kuat dalam  aljabar linier. Dengan memahami cara kerja refleksi terhadap berbagai sumbu dan titik, kita dapat lebih baik dalam menganalisis dan memvisualisasikan perubahan dalam ruang vektor.
