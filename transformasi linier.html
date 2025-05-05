@@ -57,6 +57,8 @@
     <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'transformasi linier';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
@@ -390,16 +392,16 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pengantar-transformasi-linier">1. Pengantar Transformasi Linier</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sifat-transformasi-linier">2. Sifat Transformasi Linier</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#verifikasi-transformasi-linier">3. Verifikasi Transformasi Linier</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-fungsi-yang-bukan-transformasi-linier">4. Contoh Fungsi yang Bukan Transformasi Linier</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#jenis-transformasi-linier">5. Jenis Transformasi Linier</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#matriks-untuk-transformasi-linier">6. Matriks untuk Transformasi Linier</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rotasi-dan-proyeksi">7. Rotasi dan Proyeksi</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#invers-transformasi-linier">8. Invers Transformasi Linier</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#matriks-relatif-dan-perbandingan-matriks">9. Matriks Relatif dan Perbandingan Matriks</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#catatan-tentang-matriks-diagonal">10. Catatan tentang Matriks Diagonal</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pengantar-transformasi-linier">Pengantar Transformasi Linier</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sifat-transformasi-linier">Sifat Transformasi Linier</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#verifikasi-transformasi-linier">Verifikasi Transformasi Linier</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-fungsi-yang-bukan-transformasi-linier">Contoh Fungsi yang Bukan Transformasi Linier</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#jenis-transformasi-linier">Jenis Transformasi Linier</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#matriks-untuk-transformasi-linier">Matriks untuk Transformasi Linier</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rotasi-dan-proyeksi">Rotasi dan Proyeksi</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#invers-transformasi-linier">Invers Transformasi Linier</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#matriks-relatif-dan-perbandingan-matriks">Matriks Relatif dan Perbandingan Matriks</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#catatan-tentang-matriks-diagonal">Catatan tentang Matriks Diagonal</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tugas">TUGAS</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-membuktikan-transformasi-linier">Langkah Membuktikan Transformasi Linier:</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#definisi-transformasi-linier">Definisi Transformasi Linier:</a></li>
@@ -410,7 +412,10 @@ document.write(`
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#kesimpulan">Kesimpulan:</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#refleksi-ke-sumbu-x">Refleksi ke Sumbu X</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#refleksi-ke-sumbu-x">Refleksi ke Sumbu X</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh">Contoh:</a></li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#refleksi-ke-sumbu-y">Refleksi ke Sumbu Y</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#refleksi-ke-sumbu-x-y">Refleksi ke Sumbu X = Y</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#refleksi-ke-sumbu-y-x">Refleksi ke Sumbu Y = -X</a></li>
@@ -430,7 +435,7 @@ document.write(`
 <h1>Transformasi Linier<a class="headerlink" href="#transformasi-linier" title="Link to this heading">#</a></h1>
 <hr class="docutils" />
 <section id="pengantar-transformasi-linier">
-<h2>1. Pengantar Transformasi Linier<a class="headerlink" href="#pengantar-transformasi-linier" title="Link to this heading">#</a></h2>
+<h2>Pengantar Transformasi Linier<a class="headerlink" href="#pengantar-transformasi-linier" title="Link to this heading">#</a></h2>
 <ul class="simple">
 <li><p><strong>Definisi:</strong> Transformasi linier adalah fungsi yang memetakan ruang vektor <em>V</em> ke ruang vektor <em>W</em>, dinyatakan sebagai T: V → W. Fungsi ini mengubah vektor dari satu ruang ke ruang lainnya dengan mempertahankan struktur aljabar.</p></li>
 <li><p><strong>Contoh Fungsi:</strong> Fungsi dari R² ke R² yang didefinisikan sebagai T(v₁, v₂) = (v₁ + v₂, v₁ - v₂).</p></li>
@@ -444,7 +449,7 @@ document.write(`
 </section>
 <hr class="docutils" />
 <section id="sifat-transformasi-linier">
-<h2>2. Sifat Transformasi Linier<a class="headerlink" href="#sifat-transformasi-linier" title="Link to this heading">#</a></h2>
+<h2>Sifat Transformasi Linier<a class="headerlink" href="#sifat-transformasi-linier" title="Link to this heading">#</a></h2>
 <ul class="simple">
 <li><p><strong>Sifat Utama:</strong></p>
 <ul>
@@ -457,12 +462,12 @@ document.write(`
 </section>
 <hr class="docutils" />
 <section id="verifikasi-transformasi-linier">
-<h2>3. Verifikasi Transformasi Linier<a class="headerlink" href="#verifikasi-transformasi-linier" title="Link to this heading">#</a></h2>
+<h2>Verifikasi Transformasi Linier<a class="headerlink" href="#verifikasi-transformasi-linier" title="Link to this heading">#</a></h2>
 <p>Verifikasi dilakukan dengan membuktikan sifat penjumlahan dan perkalian skalar untuk fungsi yang dimaksud.</p>
 </section>
 <hr class="docutils" />
 <section id="contoh-fungsi-yang-bukan-transformasi-linier">
-<h2>4. Contoh Fungsi yang Bukan Transformasi Linier<a class="headerlink" href="#contoh-fungsi-yang-bukan-transformasi-linier" title="Link to this heading">#</a></h2>
+<h2>Contoh Fungsi yang Bukan Transformasi Linier<a class="headerlink" href="#contoh-fungsi-yang-bukan-transformasi-linier" title="Link to this heading">#</a></h2>
 <ul class="simple">
 <li><p>f(x) = sin(x), tidak memenuhi sifat penjumlahan.</p></li>
 <li><p>f(x) = x², tidak memenuhi sifat perkalian skalar.</p></li>
@@ -470,7 +475,7 @@ document.write(`
 </section>
 <hr class="docutils" />
 <section id="jenis-transformasi-linier">
-<h2>5. Jenis Transformasi Linier<a class="headerlink" href="#jenis-transformasi-linier" title="Link to this heading">#</a></h2>
+<h2>Jenis Transformasi Linier<a class="headerlink" href="#jenis-transformasi-linier" title="Link to this heading">#</a></h2>
 <ul class="simple">
 <li><p><em>Transformasi Nol:</em> Memetakan semua vektor ke nol: T(v) = 0.</p></li>
 <li><p><em>Transformasi Identitas:</em> Memetakan setiap vektor ke dirinya sendiri: T(v) = v.</p></li>
@@ -478,32 +483,37 @@ document.write(`
 </section>
 <hr class="docutils" />
 <section id="matriks-untuk-transformasi-linier">
-<h2>6. Matriks untuk Transformasi Linier<a class="headerlink" href="#matriks-untuk-transformasi-linier" title="Link to this heading">#</a></h2>
+<h2>Matriks untuk Transformasi Linier<a class="headerlink" href="#matriks-untuk-transformasi-linier" title="Link to this heading">#</a></h2>
 <p>Transformasi linier dapat dinyatakan dengan matriks <em>A</em>, sehingga T(v) = Av.</p>
 </section>
 <hr class="docutils" />
 <section id="rotasi-dan-proyeksi">
-<h2>7. Rotasi dan Proyeksi<a class="headerlink" href="#rotasi-dan-proyeksi" title="Link to this heading">#</a></h2>
+<h2>Rotasi dan Proyeksi<a class="headerlink" href="#rotasi-dan-proyeksi" title="Link to this heading">#</a></h2>
 <ul class="simple">
 <li><p><em>Rotasi dalam R²:</em> Dinyatakan dengan matriks rotasi:<br />
 A = [cos(θ) -sin(θ); sin(θ) cos(θ)].</p></li>
 <li><p><em>Proyeksi dalam R³:</em> Dinyatakan dengan matriks proyeksi:<br />
-A = [0 0 0; 0 1 0; 0 0 1].</p></li>
+A =
+$<span class="math notranslate nohighlight">\(\begin{align*}
+  [0 0 0]\\
+  [0 1 0]
+  [0 0 1]
+  \end{align*}\)</span>$</p></li>
 </ul>
 </section>
 <hr class="docutils" />
 <section id="invers-transformasi-linier">
-<h2>8. Invers Transformasi Linier<a class="headerlink" href="#invers-transformasi-linier" title="Link to this heading">#</a></h2>
+<h2>Invers Transformasi Linier<a class="headerlink" href="#invers-transformasi-linier" title="Link to this heading">#</a></h2>
 <p>Transformasi linier memiliki invers T⁻¹ jika T(T⁻¹(v)) = v untuk semua v ∈ V.</p>
 </section>
 <hr class="docutils" />
 <section id="matriks-relatif-dan-perbandingan-matriks">
-<h2>9. Matriks Relatif dan Perbandingan Matriks<a class="headerlink" href="#matriks-relatif-dan-perbandingan-matriks" title="Link to this heading">#</a></h2>
+<h2>Matriks Relatif dan Perbandingan Matriks<a class="headerlink" href="#matriks-relatif-dan-perbandingan-matriks" title="Link to this heading">#</a></h2>
 <p>Menemukan matriks relatif terhadap basis nonstandar dan membandingkan dua matriks transformasi.</p>
 </section>
 <hr class="docutils" />
 <section id="catatan-tentang-matriks-diagonal">
-<h2>10. Catatan tentang Matriks Diagonal<a class="headerlink" href="#catatan-tentang-matriks-diagonal" title="Link to this heading">#</a></h2>
+<h2>Catatan tentang Matriks Diagonal<a class="headerlink" href="#catatan-tentang-matriks-diagonal" title="Link to this heading">#</a></h2>
 <p>Matriks diagonal adalah matriks dengan elemen non-nol hanya pada diagonal utama dan banyak digunakan dalam transformasi linier.</p>
 </section>
 <hr class="docutils" />
@@ -543,7 +553,34 @@ Menjadi: = (v₁ + v₂ + w₁ + w₂, v₁ + w₁) = (v₁ + v₂, v₁) + (w�
 <hr class="docutils" />
 <section id="refleksi-ke-sumbu-x">
 <h2>Refleksi ke Sumbu X<a class="headerlink" href="#refleksi-ke-sumbu-x" title="Link to this heading">#</a></h2>
-<iframe src="https://www.geogebra.org/calculator/dat2aayf?embed" width="800" height="600" allowfullscreen style="border: 1px solid #e4e4e4;border-radius: 4px;" frameborder="0"></iframe>
+<p>Refleksi ke sumbu X dapat dinyatakan dengan transformasi linier yang memetakan setiap titik (x, y) ke (x, -y). Matriks yang merepresentasikan refleksi ini adalah:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+A = \begin{bmatrix}
+1 &amp; 0 \\
+0 &amp; -1
+\end{bmatrix}
+\end{split}\]</div>
+<section id="contoh">
+<h3>Contoh:<a class="headerlink" href="#contoh" title="Link to this heading">#</a></h3>
+<p>Jika kita memiliki titik P(3, 4), maka refleksi P ke sumbu X adalah:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+P' = A \cdot P = \begin{bmatrix}
+1 &amp; 0 \\
+0 &amp; -1
+\end{bmatrix} \cdot \begin{bmatrix}
+3 \\
+4
+\end{bmatrix} = \begin{bmatrix}
+3 \\
+-4
+\end{bmatrix}
+\end{split}\]</div>
+<iframe src="https://www.geogebra.org/classic/hsc32rz5?embed" width="800" height="600" allowfullscreen style="border: 1px solid #e4e4e4;border-radius: 4px;" frameborder="0"></iframe>
+<p>Jadi, titik P(3, 4) setelah direfleksikan ke sumbu X menjadi P’(3, -4).</p>
+<iframe src="https://www.geogebra.org/calculator/dat2aayf?embed" width="800" height="600" allowfullscreen style="border: 1px solidrgb(3, 3, 3);border-radius: 4px;" frameborder="0"></iframe>
+</section>
 </section>
 <section id="refleksi-ke-sumbu-y">
 <h2>Refleksi ke Sumbu Y<a class="headerlink" href="#refleksi-ke-sumbu-y" title="Link to this heading">#</a></h2>
@@ -617,16 +654,16 @@ Menjadi: = (v₁ + v₂ + w₁ + w₂, v₁ + w₁) = (v₁ + v₂, v₁) + (w�
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pengantar-transformasi-linier">1. Pengantar Transformasi Linier</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sifat-transformasi-linier">2. Sifat Transformasi Linier</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#verifikasi-transformasi-linier">3. Verifikasi Transformasi Linier</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-fungsi-yang-bukan-transformasi-linier">4. Contoh Fungsi yang Bukan Transformasi Linier</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#jenis-transformasi-linier">5. Jenis Transformasi Linier</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#matriks-untuk-transformasi-linier">6. Matriks untuk Transformasi Linier</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rotasi-dan-proyeksi">7. Rotasi dan Proyeksi</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#invers-transformasi-linier">8. Invers Transformasi Linier</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#matriks-relatif-dan-perbandingan-matriks">9. Matriks Relatif dan Perbandingan Matriks</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#catatan-tentang-matriks-diagonal">10. Catatan tentang Matriks Diagonal</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pengantar-transformasi-linier">Pengantar Transformasi Linier</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sifat-transformasi-linier">Sifat Transformasi Linier</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#verifikasi-transformasi-linier">Verifikasi Transformasi Linier</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-fungsi-yang-bukan-transformasi-linier">Contoh Fungsi yang Bukan Transformasi Linier</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#jenis-transformasi-linier">Jenis Transformasi Linier</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#matriks-untuk-transformasi-linier">Matriks untuk Transformasi Linier</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rotasi-dan-proyeksi">Rotasi dan Proyeksi</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#invers-transformasi-linier">Invers Transformasi Linier</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#matriks-relatif-dan-perbandingan-matriks">Matriks Relatif dan Perbandingan Matriks</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#catatan-tentang-matriks-diagonal">Catatan tentang Matriks Diagonal</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tugas">TUGAS</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-membuktikan-transformasi-linier">Langkah Membuktikan Transformasi Linier:</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#definisi-transformasi-linier">Definisi Transformasi Linier:</a></li>
@@ -637,7 +674,10 @@ Menjadi: = (v₁ + v₂ + w₁ + w₂, v₁ + w₁) = (v₁ + v₂, v₁) + (w�
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#kesimpulan">Kesimpulan:</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#refleksi-ke-sumbu-x">Refleksi ke Sumbu X</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#refleksi-ke-sumbu-x">Refleksi ke Sumbu X</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh">Contoh:</a></li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#refleksi-ke-sumbu-y">Refleksi ke Sumbu Y</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#refleksi-ke-sumbu-x-y">Refleksi ke Sumbu X = Y</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#refleksi-ke-sumbu-y-x">Refleksi ke Sumbu Y = -X</a></li>

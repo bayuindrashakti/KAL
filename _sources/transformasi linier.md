@@ -2,7 +2,7 @@
 
 ---
 
-## 1. Pengantar Transformasi Linier
+## Pengantar Transformasi Linier
 
 - **Definisi:** Transformasi linier adalah fungsi yang memetakan ruang vektor *V* ke ruang vektor *W*, dinyatakan sebagai T: V → W. Fungsi ini mengubah vektor dari satu ruang ke ruang lainnya dengan mempertahankan struktur aljabar.
   
@@ -14,7 +14,7 @@
 
 ---
 
-## 2. Sifat Transformasi Linier
+## Sifat Transformasi Linier
 
 - **Sifat Utama:**
   - *Penjumlahan:* T(v + u) = T(v) + T(u) untuk semua v, u ∈ V.
@@ -24,55 +24,60 @@
 
 ---
 
-## 3. Verifikasi Transformasi Linier
+## Verifikasi Transformasi Linier
 
 Verifikasi dilakukan dengan membuktikan sifat penjumlahan dan perkalian skalar untuk fungsi yang dimaksud.
 
 ---
 
-## 4. Contoh Fungsi yang Bukan Transformasi Linier
+## Contoh Fungsi yang Bukan Transformasi Linier
 
 - f(x) = sin(x), tidak memenuhi sifat penjumlahan.
 - f(x) = x², tidak memenuhi sifat perkalian skalar.
 
 ---
 
-## 5. Jenis Transformasi Linier
+## Jenis Transformasi Linier
 
 - *Transformasi Nol:* Memetakan semua vektor ke nol: T(v) = 0.
 - *Transformasi Identitas:* Memetakan setiap vektor ke dirinya sendiri: T(v) = v.
 
 ---
 
-## 6. Matriks untuk Transformasi Linier
+## Matriks untuk Transformasi Linier
 
 Transformasi linier dapat dinyatakan dengan matriks *A*, sehingga T(v) = Av.
 
 ---
 
-## 7. Rotasi dan Proyeksi
+## Rotasi dan Proyeksi
 
 - *Rotasi dalam R²:* Dinyatakan dengan matriks rotasi:  
   A = [cos(θ) -sin(θ); sin(θ) cos(θ)].
   
 - *Proyeksi dalam R³:* Dinyatakan dengan matriks proyeksi:  
-  A = [0 0 0; 0 1 0; 0 0 1].
+  A = 
+  $$\begin{align*}
+    [0 0 0]\\
+    [0 1 0]
+    [0 0 1]
+    \end{align*}$$
 
 ---
 
-## 8. Invers Transformasi Linier
+## Invers Transformasi Linier
 
 Transformasi linier memiliki invers T⁻¹ jika T(T⁻¹(v)) = v untuk semua v ∈ V.
 
 ---
 
-## 9. Matriks Relatif dan Perbandingan Matriks
+## Matriks Relatif dan Perbandingan Matriks
 
 Menemukan matriks relatif terhadap basis nonstandar dan membandingkan dua matriks transformasi.
 
 ---
 
-## 10. Catatan tentang Matriks Diagonal
+## Catatan tentang Matriks Diagonal
 
 Matriks diagonal adalah matriks dengan elemen non-nol hanya pada diagonal utama dan banyak digunakan dalam transformasi linier.
 
@@ -112,8 +117,38 @@ Karena T memenuhi kedua sifat, maka T(v₁, v₂) = (v₁ + v₂, v₁) adalah t
 ---
 
 ## Refleksi ke Sumbu X
+Refleksi ke sumbu X dapat dinyatakan dengan transformasi linier yang memetakan setiap titik (x, y) ke (x, -y). Matriks yang merepresentasikan refleksi ini adalah:
 
-<iframe src="https://www.geogebra.org/calculator/dat2aayf?embed" width="800" height="600" allowfullscreen style="border: 1px solid #e4e4e4;border-radius: 4px;" frameborder="0"></iframe>
+$$
+A = \begin{bmatrix}
+1 & 0 \\
+0 & -1
+\end{bmatrix}
+$$
+
+### Contoh:
+
+Jika kita memiliki titik P(3, 4), maka refleksi P ke sumbu X adalah:
+
+$$
+P' = A \cdot P = \begin{bmatrix}
+1 & 0 \\
+0 & -1
+\end{bmatrix} \cdot \begin{bmatrix}
+3 \\
+4
+\end{bmatrix} = \begin{bmatrix}
+3 \\
+-4
+\end{bmatrix}
+$$
+
+<iframe src="https://www.geogebra.org/classic/hsc32rz5?embed" width="800" height="600" allowfullscreen style="border: 1px solid #e4e4e4;border-radius: 4px;" frameborder="0"></iframe>
+
+Jadi, titik P(3, 4) setelah direfleksikan ke sumbu X menjadi P'(3, -4).
+
+
+<iframe src="https://www.geogebra.org/calculator/dat2aayf?embed" width="800" height="600" allowfullscreen style="border: 1px solidrgb(3, 3, 3);border-radius: 4px;" frameborder="0"></iframe>
 
 ## Refleksi ke Sumbu Y
 
