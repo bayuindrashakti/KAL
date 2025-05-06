@@ -1,4 +1,4 @@
-# Refleksi
+# Transformasi Refleksi
 ## 1. Refleksi Terhadap Sumbu X
 Titik asal (2, -2) dipindahkan ke titik hasil refleksi (2, 2) dengan menggunakan matriks refleksi terhadap sumbu X.
 ![alt text](https://github.com/bayuindrashakti/KAL/blob/main/x.png?raw=true)
