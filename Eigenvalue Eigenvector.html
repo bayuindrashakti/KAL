@@ -199,6 +199,7 @@
 <li class="toctree-l1"><a class="reference internal" href="transformasi%20linier.html">Transformasi Linier</a></li>
 <li class="toctree-l1"><a class="reference internal" href="transformasi%20refleksi.html">Transformasi Refleksi</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Eigenvalue dan Eigenvector</a></li>
+
 </ul>
 
     </div>
@@ -371,7 +372,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
 </div></div>
       
     </div>
@@ -387,6 +390,33 @@ document.write(`
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Eigenvalue dan Eigenvector</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#eigenvalue-adalah-skalar-yang-menunjukkan-faktor-pengali-yang-diterapkan-pada-eigenvector-ketika-suatu-matriks-transformasi-diterapkan-sedangkan-eigenvector-adalah-vektor-yang-tetap-pada-arah-yang-sama-meskipun-ukurannya-berubah-ketika-matriks-tersebut-diterapkan">Eigenvalue adalah skalar yang menunjukkan faktor pengali yang diterapkan pada eigenvector ketika suatu matriks transformasi diterapkan, sedangkan eigenvector adalah vektor yang tetap pada arah yang sama meskipun ukurannya berubah ketika matriks tersebut diterapkan.</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#eigenvalue-nilai-eigen">Eigenvalue (Nilai Eigen)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#eigenvector">Eigenvector</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#cara-mencari-eigenvalue-dan-eigenvector">Cara Mencari Eigenvalue dan Eigenvector</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-1-menentukan-eigenvalue">Langkah 1: Menentukan Eigenvalue</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#menyelesaikan-persamaan-kuadrat">Menyelesaikan persamaan kuadrat:</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-2-mencari-eigenvector">Langkah 2: Mencari Eigenvector</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#untuk-lambda-1-3">Untuk <span class="math notranslate nohighlight">\(\lambda_1 = 3\)</span>:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#untuk-lambda-2-1">Untuk <span class="math notranslate nohighlight">\(\lambda_2 = 1\)</span>:</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hasil-akhir">Hasil Akhir</a></li>
+</ul>
+</li>
+</ul>
+
+            </nav>
         </div>
     </div>
 </div>
@@ -398,16 +428,140 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="eigenvalue-dan-eigenvector">
 <h1>Eigenvalue dan Eigenvector<a class="headerlink" href="#eigenvalue-dan-eigenvector" title="Link to this heading">#</a></h1>
-<p><strong>Eigenvalue</strong> adalah skalar yang menunjukkan faktor pengali yang diterapkan pada eigenvector ketika suatu matriks transformasi diterapkan, sedangkan <strong>eigenvector</strong> adalah vektor yang tetap pada arah yang sama meskipun ukurannya berubah ketika matriks tersebut diterapkan.</p>
-<div class="math notranslate nohighlight">
-\[ Av = \lambda v \]</div>
+<section id="eigenvalue-adalah-skalar-yang-menunjukkan-faktor-pengali-yang-diterapkan-pada-eigenvector-ketika-suatu-matriks-transformasi-diterapkan-sedangkan-eigenvector-adalah-vektor-yang-tetap-pada-arah-yang-sama-meskipun-ukurannya-berubah-ketika-matriks-tersebut-diterapkan">
+<h2>Eigenvalue adalah skalar yang menunjukkan faktor pengali yang diterapkan pada eigenvector ketika suatu matriks transformasi diterapkan, sedangkan eigenvector adalah vektor yang tetap pada arah yang sama meskipun ukurannya berubah ketika matriks tersebut diterapkan.<a class="headerlink" href="#eigenvalue-adalah-skalar-yang-menunjukkan-faktor-pengali-yang-diterapkan-pada-eigenvector-ketika-suatu-matriks-transformasi-diterapkan-sedangkan-eigenvector-adalah-vektor-yang-tetap-pada-arah-yang-sama-meskipun-ukurannya-berubah-ketika-matriks-tersebut-diterapkan" title="Link to this heading">#</a></h2>
+</section>
+<section id="eigenvalue-nilai-eigen">
+<h2>Eigenvalue (Nilai Eigen)<a class="headerlink" href="#eigenvalue-nilai-eigen" title="Link to this heading">#</a></h2>
+<p>Eigenvalue dari sebuah matriks A adalah skalar $<span class="math notranslate nohighlight">\( /lambda v \)</span><span class="math notranslate nohighlight">\( ynag memenuhi persamaan
+\)</span><span class="math notranslate nohighlight">\( Av = \lambda v \)</span>$
+dimana <strong>v</strong> adalah eigenvector yang sesuai.</p>
+</section>
+<section id="eigenvector">
+<h2>Eigenvector<a class="headerlink" href="#eigenvector" title="Link to this heading">#</a></h2>
+<p>Eigenvektor adalah vektor non-nol yang hanya diubah oleh matriks dengan skala, yaitu, ketika matriks diterapkan padanya, hasilnya adalah eigenvektor yang sama dikalikan dengan eigenvalue:
+$<span class="math notranslate nohighlight">\( Av = \lambda v \)</span>$</p>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="cara-mencari-eigenvalue-dan-eigenvector">
+<h1>Cara Mencari Eigenvalue dan Eigenvector<a class="headerlink" href="#cara-mencari-eigenvalue-dan-eigenvector" title="Link to this heading">#</a></h1>
+<p>Misalkan kita menggunakan matriks berikut:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
-A = \begin{bmatrix}
-2 &amp; 1 \\
-1 &amp; 2
-\end{bmatrix}
+A = \begin{bmatrix} 2 &amp; 1 \\ 1 &amp; 2 \end{bmatrix}
 \end{split}\]</div>
+<section id="langkah-1-menentukan-eigenvalue">
+<h2>Langkah 1: Menentukan Eigenvalue<a class="headerlink" href="#langkah-1-menentukan-eigenvalue" title="Link to this heading">#</a></h2>
+<p>Eigenvalue <span class="math notranslate nohighlight">\(\lambda\)</span> diperoleh dari:</p>
+<div class="math notranslate nohighlight">
+\[
+\det(A - \lambda I) = 0
+\]</div>
+<p>Dengan <span class="math notranslate nohighlight">\(I\)</span> adalah matriks identitas. Maka:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+A - \lambda I = \begin{bmatrix} 2-\lambda &amp; 1 \\ 1 &amp; 2-\lambda \end{bmatrix}
+\end{split}\]</div>
+<p>Hitung determinan:</p>
+<div class="math notranslate nohighlight">
+\[
+\det(A - \lambda I) = (2 - \lambda)(2 - \lambda) - 1 \cdot 1 = (2 - \lambda)^2 - 1
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+= 4 - 4\lambda + \lambda^2 - 1 = \lambda^2 - 4\lambda + 3
+\]</div>
+<p>Maka kita punya persamaan karakteristik:</p>
+<div class="math notranslate nohighlight">
+\[
+\lambda^2 - 4\lambda + 3 = 0
+\]</div>
+<section id="menyelesaikan-persamaan-kuadrat">
+<h3>Menyelesaikan persamaan kuadrat:<a class="headerlink" href="#menyelesaikan-persamaan-kuadrat" title="Link to this heading">#</a></h3>
+<div class="math notranslate nohighlight">
+\[
+\lambda = \frac{4 \pm \sqrt{(-4)^2 - 4 \cdot 1 \cdot 3}}{2 \cdot 1}
+= \frac{4 \pm \sqrt{16 - 12}}{2}
+= \frac{4 \pm \sqrt{4}}{2}
+= \frac{4 \pm 2}{2}
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+\Rightarrow \lambda_1 = 3, \quad \lambda_2 = 1
+\]</div>
+</section>
+</section>
+<hr class="docutils" />
+<section id="langkah-2-mencari-eigenvector">
+<h2>Langkah 2: Mencari Eigenvector<a class="headerlink" href="#langkah-2-mencari-eigenvector" title="Link to this heading">#</a></h2>
+<p>Untuk masing-masing <span class="math notranslate nohighlight">\(\lambda\)</span>, kita cari <span class="math notranslate nohighlight">\(v\)</span> yang memenuhi:</p>
+<div class="math notranslate nohighlight">
+\[
+(A - \lambda I)v = 0
+\]</div>
+<hr class="docutils" />
+<section id="untuk-lambda-1-3">
+<h3>Untuk <span class="math notranslate nohighlight">\(\lambda_1 = 3\)</span>:<a class="headerlink" href="#untuk-lambda-1-3" title="Link to this heading">#</a></h3>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+A - 3I = \begin{bmatrix} 2 - 3 &amp; 1 \\ 1 &amp; 2 - 3 \end{bmatrix}
+= \begin{bmatrix} -1 &amp; 1 \\ 1 &amp; -1 \end{bmatrix}
+\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{bmatrix} -1 &amp; 1 \\ 1 &amp; -1 \end{bmatrix} \begin{bmatrix} x \\ y \end{bmatrix}
+= \begin{bmatrix} 0 \\ 0 \end{bmatrix}
+\end{split}\]</div>
+<p>Sistem persamaan:</p>
+<div class="math notranslate nohighlight">
+\[
+-1x + 1y = 0 \Rightarrow y = x
+\]</div>
+<p>Jadi eigenvector untuk <span class="math notranslate nohighlight">\(\lambda = 3\)</span> adalah:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+v_1 = \begin{bmatrix} 1 \\ 1 \end{bmatrix}
+\quad \text{(atau kelipatan skalar dari ini)}
+\end{split}\]</div>
+</section>
+<hr class="docutils" />
+<section id="untuk-lambda-2-1">
+<h3>Untuk <span class="math notranslate nohighlight">\(\lambda_2 = 1\)</span>:<a class="headerlink" href="#untuk-lambda-2-1" title="Link to this heading">#</a></h3>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+A - 1I = \begin{bmatrix} 2 - 1 &amp; 1 \\ 1 &amp; 2 - 1 \end{bmatrix}
+= \begin{bmatrix} 1 &amp; 1 \\ 1 &amp; 1 \end{bmatrix}
+\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{bmatrix} 1 &amp; 1 \\ 1 &amp; 1 \end{bmatrix} \begin{bmatrix} x \\ y \end{bmatrix}
+= \begin{bmatrix} 0 \\ 0 \end{bmatrix}
+\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[
+x + y = 0 \Rightarrow y = -x
+\]</div>
+<p>Jadi eigenvector untuk <span class="math notranslate nohighlight">\(\lambda = 1\)</span> adalah:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+v_2 = \begin{bmatrix} 1 \\ -1 \end{bmatrix}
+\quad \text{(atau kelipatan skalar dari ini)}
+\end{split}\]</div>
+</section>
+</section>
+<hr class="docutils" />
+<section id="hasil-akhir">
+<h2>Hasil Akhir<a class="headerlink" href="#hasil-akhir" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p><strong>Eigenvalue</strong>: <span class="math notranslate nohighlight">\(\lambda_1 = 3\)</span>, <span class="math notranslate nohighlight">\(\lambda_2 = 1\)</span></p></li>
+<li><p><strong>Eigenvector</strong>:</p>
+<ul>
+<li><p>Untuk <span class="math notranslate nohighlight">\(\lambda = 3\)</span>: <span class="math notranslate nohighlight">\(\begin{bmatrix} 1 \\ 1 \end{bmatrix}\)</span></p></li>
+<li><p>Untuk <span class="math notranslate nohighlight">\(\lambda = 1\)</span>: <span class="math notranslate nohighlight">\(\begin{bmatrix} 1 \\ -1 \end{bmatrix}\)</span></p></li>
+</ul>
+</li>
+</ul>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -455,6 +609,40 @@ A = \begin{bmatrix}
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Eigenvalue dan Eigenvector</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#eigenvalue-adalah-skalar-yang-menunjukkan-faktor-pengali-yang-diterapkan-pada-eigenvector-ketika-suatu-matriks-transformasi-diterapkan-sedangkan-eigenvector-adalah-vektor-yang-tetap-pada-arah-yang-sama-meskipun-ukurannya-berubah-ketika-matriks-tersebut-diterapkan">Eigenvalue adalah skalar yang menunjukkan faktor pengali yang diterapkan pada eigenvector ketika suatu matriks transformasi diterapkan, sedangkan eigenvector adalah vektor yang tetap pada arah yang sama meskipun ukurannya berubah ketika matriks tersebut diterapkan.</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#eigenvalue-nilai-eigen">Eigenvalue (Nilai Eigen)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#eigenvector">Eigenvector</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#cara-mencari-eigenvalue-dan-eigenvector">Cara Mencari Eigenvalue dan Eigenvector</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-1-menentukan-eigenvalue">Langkah 1: Menentukan Eigenvalue</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#menyelesaikan-persamaan-kuadrat">Menyelesaikan persamaan kuadrat:</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-2-mencari-eigenvector">Langkah 2: Mencari Eigenvector</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#untuk-lambda-1-3">Untuk <span class="math notranslate nohighlight">\(\lambda_1 = 3\)</span>:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#untuk-lambda-2-1">Untuk <span class="math notranslate nohighlight">\(\lambda_2 = 1\)</span>:</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hasil-akhir">Hasil Akhir</a></li>
+</ul>
+</li>
+</ul>
+
+  </nav></div>
+
+</div></div>
               
             
           </div>
