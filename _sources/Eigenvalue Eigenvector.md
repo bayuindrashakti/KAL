@@ -1,10 +1,14 @@
 # Eigenvalue dan Eigenvector
 
-## Eigenvalue adalah skalar yang menunjukkan faktor pengali yang diterapkan pada eigenvector ketika suatu matriks transformasi diterapkan, sedangkan eigenvector adalah vektor yang tetap pada arah yang sama meskipun ukurannya berubah ketika matriks tersebut diterapkan.
+Eigenvalue adalah skalar yang menunjukkan faktor pengali yang diterapkan pada eigenvector ketika suatu matriks transformasi diterapkan, sedangkan eigenvector adalah vektor yang tetap pada arah yang sama meskipun ukurannya berubah ketika matriks tersebut diterapkan.
 
 ## Eigenvalue (Nilai Eigen)
-Eigenvalue dari sebuah matriks A adalah skalar $$ /lambda v $$ ynag memenuhi persamaan
+Eigenvalue dari sebuah matriks A adalah skalar 
+$$ \lambda $$
+ynag memenuhi persamaan
+---
 $$ Av = \lambda v $$
+---
 dimana **v** adalah eigenvector yang sesuai.
 
 ## Eigenvector
