@@ -4,7 +4,7 @@ Eigenvalue adalah skalar yang menunjukkan faktor pengali yang diterapkan pada ei
 
 ## Eigenvalue (Nilai Eigen)
 Eigenvalue dari sebuah matriks A adalah skalar 
-$$ \lambda $$
+$ \lambda $
 ynag memenuhi persamaan
 ---
 $$ Av = \lambda v $$
@@ -13,6 +13,8 @@ dimana **v** adalah eigenvector yang sesuai.
 
 ## Eigenvector
 Eigenvektor adalah vektor non-nol yang hanya diubah oleh matriks dengan skala, yaitu, ketika matriks diterapkan padanya, hasilnya adalah eigenvektor yang sama dikalikan dengan eigenvalue:
+
+
 $$ Av = \lambda v $$
 
 # Cara Mencari Eigenvalue dan Eigenvector
