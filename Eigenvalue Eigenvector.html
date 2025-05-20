@@ -200,6 +200,7 @@
 <li class="toctree-l1"><a class="reference internal" href="transformasi%20refleksi.html">Transformasi Refleksi</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Eigenvalue dan Eigenvector</a></li>
 
+
 </ul>
 
     </div>
@@ -416,6 +417,16 @@ ynag memenuhi persamaan</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hasil-akhir">Hasil Akhir</a></li>
 </ul>
 </li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#definisi-ortogonal-dan-ortonormal">Definisi Ortogonal dan Ortonormal</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ortogonal">Ortogonal</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ortonormal">Ortonormal</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hubungan-dengan-eigenvector-matriks-simetris">Hubungan dengan Eigenvector Matriks Simetris</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#bukti-ortogonalitas">Bukti Ortogonalitas</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#membuat-ortonormal">Membuat Ortonormal</a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 
             </nav>
@@ -570,6 +581,87 @@ v_2 = \begin{bmatrix} 1 \\ -1 \end{bmatrix}
 </ul>
 </section>
 </section>
+<section class="tex2jax_ignore mathjax_ignore" id="definisi-ortogonal-dan-ortonormal">
+<h1>Definisi Ortogonal dan Ortonormal<a class="headerlink" href="#definisi-ortogonal-dan-ortonormal" title="Link to this heading">#</a></h1>
+<section id="ortogonal">
+<h2>Ortogonal<a class="headerlink" href="#ortogonal" title="Link to this heading">#</a></h2>
+<p>Dua vektor dikatakan <strong>ortogonal</strong> jika <strong>sudut</strong> antara keduanya adalah 90°, atau dalam istilah aljabar:</p>
+<div class="math notranslate nohighlight">
+\[
+\vec{u} \cdot \vec{v} = 0
+\]</div>
+<p>Artinya, <strong>hasil dot product = 0</strong>.</p>
+</section>
+<hr class="docutils" />
+<section id="ortonormal">
+<h2>Ortonormal<a class="headerlink" href="#ortonormal" title="Link to this heading">#</a></h2>
+<p>Dua vektor dikatakan <strong>ortonormal</strong> jika:</p>
+<ol class="arabic simple">
+<li><p>Mereka <strong>ortogonal</strong> satu sama lain.</p></li>
+<li><p>Masing-masing adalah <strong>vektor satuan</strong> (normanya = 1).</p></li>
+</ol>
+<p>Secara matematis:</p>
+<div class="math notranslate nohighlight">
+\[
+\vec{u} \cdot \vec{v} = 0 \quad \text{dan} \quad \|\vec{u}\| = \|\vec{v}\| = 1
+\]</div>
+</section>
+<hr class="docutils" />
+<section id="hubungan-dengan-eigenvector-matriks-simetris">
+<h2>Hubungan dengan Eigenvector Matriks Simetris<a class="headerlink" href="#hubungan-dengan-eigenvector-matriks-simetris" title="Link to this heading">#</a></h2>
+<p>Matriks simetris (seperti matriks</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+A = \begin{bmatrix} 2 &amp; 1 \\ 1 &amp; 2 \end{bmatrix}
+\end{split}\]</div>
+<p>) <strong>selalu memiliki eigenvector yang ortogonal</strong> jika nilai eigennya berbeda.</p>
+<p>Dalam kasus kita:</p>
+<ul class="simple">
+<li><p>Matriks <span class="math notranslate nohighlight">\(A\)</span> <strong>simetris</strong></p></li>
+<li><p>Eigenvalue: <span class="math notranslate nohighlight">\(\lambda_1 = 3\)</span>, <span class="math notranslate nohighlight">\(\lambda_2 = 1\)</span></p></li>
+<li><p>Eigenvector:</p>
+<ul>
+<li><p><span class="math notranslate nohighlight">\(v_1 = \begin{bmatrix} 1 \\ 1 \end{bmatrix}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(v_2 = \begin{bmatrix} 1 \\ -1 \end{bmatrix}\)</span></p></li>
+</ul>
+</li>
+</ul>
+<hr class="docutils" />
+<section id="bukti-ortogonalitas">
+<h3>Bukti Ortogonalitas<a class="headerlink" href="#bukti-ortogonalitas" title="Link to this heading">#</a></h3>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+v_1 \cdot v_2 = \begin{bmatrix} 1 \\ 1 \end{bmatrix} \cdot \begin{bmatrix} 1 \\ -1 \end{bmatrix}
+= 1 \cdot 1 + 1 \cdot (-1) = 1 - 1 = 0
+\end{split}\]</div>
+<p><span class="math notranslate nohighlight">\(\Rightarrow\)</span> <strong>Vektor ortogonal</strong></p>
+</section>
+<hr class="docutils" />
+<section id="membuat-ortonormal">
+<h3>Membuat Ortonormal<a class="headerlink" href="#membuat-ortonormal" title="Link to this heading">#</a></h3>
+<p>Untuk membuat ortonormal, kita <strong>normalkan</strong> masing-masing vektor:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\|v_1\| = \sqrt{1^2 + 1^2} = \sqrt{2}
+\quad \Rightarrow \quad
+\hat{v}_1 = \frac{1}{\sqrt{2}} \begin{bmatrix} 1 \\ 1 \end{bmatrix}
+\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\|v_2\| = \sqrt{1^2 + (-1)^2} = \sqrt{2}
+\quad \Rightarrow \quad
+\hat{v}_2 = \frac{1}{\sqrt{2}} \begin{bmatrix} 1 \\ -1 \end{bmatrix}
+\end{split}\]</div>
+<p>Jadi, basis ortonormalnya:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\hat{v}_1 = \frac{1}{\sqrt{2}} \begin{bmatrix} 1 \\ 1 \end{bmatrix},
+\quad
+\hat{v}_2 = \frac{1}{\sqrt{2}} \begin{bmatrix} 1 \\ -1 \end{bmatrix}
+\end{split}\]</div>
+</section>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {
@@ -645,6 +737,16 @@ ynag memenuhi persamaan</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hasil-akhir">Hasil Akhir</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#definisi-ortogonal-dan-ortonormal">Definisi Ortogonal dan Ortonormal</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ortogonal">Ortogonal</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ortonormal">Ortonormal</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hubungan-dengan-eigenvector-matriks-simetris">Hubungan dengan Eigenvector Matriks Simetris</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#bukti-ortogonalitas">Bukti Ortogonalitas</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#membuat-ortonormal">Membuat Ortonormal</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>

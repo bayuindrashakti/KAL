@@ -3,6 +3,7 @@
 Eigenvalue adalah skalar yang menunjukkan faktor pengali yang diterapkan pada eigenvector ketika suatu matriks transformasi diterapkan, sedangkan eigenvector adalah vektor yang tetap pada arah yang sama meskipun ukurannya berubah ketika matriks tersebut diterapkan.
 
 ## Eigenvalue (Nilai Eigen)
+
 Eigenvalue dari sebuah matriks A adalah skalar 
 $ \lambda $
 ynag memenuhi persamaan
@@ -138,3 +139,89 @@ $$
 * **Eigenvector**:
   * Untuk $\lambda = 3$: $\begin{bmatrix} 1 \\ 1 \end{bmatrix}$
   * Untuk $\lambda = 1$: $\begin{bmatrix} 1 \\ -1 \end{bmatrix}$
+
+
+# Definisi Ortogonal dan Ortonormal
+
+## Ortogonal
+
+Dua vektor dikatakan **ortogonal** jika **sudut** antara keduanya adalah 90°, atau dalam istilah aljabar:
+
+$$
+\vec{u} \cdot \vec{v} = 0
+$$
+
+Artinya, **hasil dot product = 0**.
+
+---
+
+## Ortonormal
+
+Dua vektor dikatakan **ortonormal** jika:
+
+1. Mereka **ortogonal** satu sama lain.
+2. Masing-masing adalah **vektor satuan** (normanya = 1).
+
+Secara matematis:
+
+$$
+\vec{u} \cdot \vec{v} = 0 \quad \text{dan} \quad \|\vec{u}\| = \|\vec{v}\| = 1
+$$
+
+---
+
+## Hubungan dengan Eigenvector Matriks Simetris
+
+Matriks simetris (seperti matriks 
+
+$$
+A = \begin{bmatrix} 2 & 1 \\ 1 & 2 \end{bmatrix}
+$$ 
+
+) **selalu memiliki eigenvector yang ortogonal** jika nilai eigennya berbeda.
+
+Dalam kasus kita:
+
+* Matriks $A$ **simetris**
+* Eigenvalue: $\lambda_1 = 3$, $\lambda_2 = 1$
+* Eigenvector:
+
+  * $v_1 = \begin{bmatrix} 1 \\ 1 \end{bmatrix}$
+  * $v_2 = \begin{bmatrix} 1 \\ -1 \end{bmatrix}$
+
+---
+
+### Bukti Ortogonalitas
+
+$$
+v_1 \cdot v_2 = \begin{bmatrix} 1 \\ 1 \end{bmatrix} \cdot \begin{bmatrix} 1 \\ -1 \end{bmatrix}
+= 1 \cdot 1 + 1 \cdot (-1) = 1 - 1 = 0
+$$
+
+$\Rightarrow$ **Vektor ortogonal**
+
+---
+
+### Membuat Ortonormal
+
+Untuk membuat ortonormal, kita **normalkan** masing-masing vektor:
+
+$$
+\|v_1\| = \sqrt{1^2 + 1^2} = \sqrt{2}
+\quad \Rightarrow \quad
+\hat{v}_1 = \frac{1}{\sqrt{2}} \begin{bmatrix} 1 \\ 1 \end{bmatrix}
+$$
+
+$$
+\|v_2\| = \sqrt{1^2 + (-1)^2} = \sqrt{2}
+\quad \Rightarrow \quad
+\hat{v}_2 = \frac{1}{\sqrt{2}} \begin{bmatrix} 1 \\ -1 \end{bmatrix}
+$$
+
+Jadi, basis ortonormalnya:
+
+$$
+\hat{v}_1 = \frac{1}{\sqrt{2}} \begin{bmatrix} 1 \\ 1 \end{bmatrix},
+\quad
+\hat{v}_2 = \frac{1}{\sqrt{2}} \begin{bmatrix} 1 \\ -1 \end{bmatrix}
+$$
