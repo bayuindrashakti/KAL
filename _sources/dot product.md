@@ -8,8 +8,8 @@ Dot product (hasil kali skalar) adalah operasi antara dua vektor . Hasilnya adal
 
 Misalkan kita memiliki dua vektor di dimensi 2:
 
-- **Vektor A**: $\( \mathbf{A} = (a_1, a_2) \)$
-- **Vektor B**: $\( \mathbf{B} = (b_1, b_2) \)$
+- **Vektor A**: $( \mathbf{A} = (a_1, a_2) )$
+- **Vektor B**: $( \mathbf{B} = (b_1, b_2) )$
 
 Dot product dari kedua vektor ini dihitung dengan rumus:
 
