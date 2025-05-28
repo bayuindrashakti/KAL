@@ -24,6 +24,8 @@ Mari kita hitung dot product dari dua vektor berikut:
 - **Vektor A**: $( \mathbf{A} = (3, 4) )$
 - **Vektor B**: $( \mathbf{B} = (2, 1) )$
 
+<iframe src="https://www.geogebra.org/graphing/gej6fhur?embed" width="800" height="600" allowfullscreen style="border: 1px solid #e4e4e4;border-radius: 4px;" frameborder="0"></iframe>
+
 **Langkah : Menghitung dengan Rumus**
 
 $[
@@ -61,6 +63,8 @@ Mari kita hitung dot product dari dua vektor berikut:
 
 - **Vektor A**: $( \mathbf{A} = (1, 2, 3) )$
 - **Vektor B**: $( \mathbf{B} = (4, -5, 6) )$
+
+<iframe src="https://www.geogebra.org/classic/vvvsfprf?embed" width="800" height="600" allowfullscreen style="border: 1px solid #e4e4e4;border-radius: 4px;" frameborder="0"></iframe>
 
 **Langkah 1: Menghitung dengan Rumus**
 
